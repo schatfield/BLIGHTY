@@ -12,7 +12,7 @@ def register_user(request):
 
     # For handling when user submits the form data
     if request.method == "POST":
-
+        print(request)
         # First create a new user using django's built in craziness. create_user is a method in django.
         new_user = User.objects.create_user(
             username=request.POST['username'],
