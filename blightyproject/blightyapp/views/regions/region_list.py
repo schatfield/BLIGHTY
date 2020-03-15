@@ -10,5 +10,6 @@ def region_list(request):
         context = {
             'all_regions': all_regions
         }
+        
 
         return render(request, template, context)
