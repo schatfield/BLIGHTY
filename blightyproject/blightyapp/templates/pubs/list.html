@@ -7,8 +7,9 @@
   </head>
   <body>
     <h1>Pubs</h1>
-  
     <ol>
+      {{pub.region.name}}
+
     {% for pub in all_pubs %}
         <li>
          {% comment %} REGION: {{pub.region.name}} {% endcomment %}
