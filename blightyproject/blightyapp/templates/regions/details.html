@@ -1,5 +1,8 @@
-{% block content %}
 
+
+{% extends 'shared/base.html' %}
+
+{% block content %}
 
 
     <section id="region-details">
@@ -17,17 +20,8 @@
         {% endfor %}
     </section>
 
-    {% comment %} <section id="book-actions" style="display:flex;">
-        <form action="{% url 'libraryapp:book' book.id %}" method="POST">
-            {% csrf_token %}
-            <input type="hidden" name="actual_method" value="DELETE">
-            <button>Delete</button>
-        </form>
+    {% endblock %}
 
-        <form action="{% url 'libraryapp:book_edit_form' book.id %}" method="GET">
-            {% csrf_token %}
-            <button>Edit</button>
-        </form>
-    </section> {% endcomment %}
+    
 
- {% endblock %}
+ 
