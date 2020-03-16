@@ -1,0 +1,27 @@
+
+{% extends 'shared/base.html' %}
+
+{% block content %}
+
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pub Guide</title>
+  </head>
+  <body>
+    <h1>Pub Guide</h1>
+    <ol>
+
+    {% for region in all_regions %}
+        <li>
+             <a href="{% url 'blightyapp:region' region.id %}"> {{ region.name }} </a>
+            
+        </li>
+    {% endfor %}
+    </ol>
+  </body>
+</html>
+
+{% endblock %}
