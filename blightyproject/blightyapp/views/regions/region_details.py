@@ -28,9 +28,7 @@ def region_details(request, region_id):
 
             if len(patron_pub) == 0:
                 pub.patron_pub = None
-
-            """ If there is a record present, assign the patron_pub record to the patron_pub property (attaching the patron pub record to the pub. this is the record you created above: PatronPub.objects.filter(pub_id=pub.id, patron_id=patron_id)  using bracket notation because the ORM is returning a list )"""
-
+                            # """ If there is a record present, assign the patron_pub record to the patron_pub property (attaching the patron pub record to the pub. this is the record you created above: PatronPub.objects.filter(pub_id=pub.id, patron_id=patron_id)  using bracket notation because the ORM is returning a list )"""
             else:
                 pub.patron_pub = patron_pub[0]
 
