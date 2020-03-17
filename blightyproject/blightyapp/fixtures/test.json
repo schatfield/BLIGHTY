@@ -38,6 +38,8 @@
                 "patron": 1,
                 "pub": 1,
                 "is_wished": false,
+                "is_visited": false,
+                "has_experience": false,
                 "beers_tried": "Gloucester Golden Ale",
                 "food_ate": "Fish Cakes",
                 "experience": "Cozy and I want to live there."  
