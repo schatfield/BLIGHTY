@@ -2,7 +2,6 @@ from django.db import models
 from .region import Region
 
 class Pub (models.Model):
-
     name = models.CharField(max_length=100)
     description = models.CharField(max_length=3000)
     address = models.CharField(max_length=300)

@@ -9,19 +9,50 @@
         <h1>{{ region.name }}</h1>
        
        {% for pub in pubs %}
-        <li>
-   
-        <h2>{{ pub.name }}</h2>
 
-        <div> {{ pub.description }}</div>
-        <div>ADDRESS: {{ pub.address }}</div>
-        <div>WEBSITE: {{ pub.website}}</div>
-        </li>
+       <div>  
+            <h2>{{ pub.name }}</h2>
+
+            <div> {{ pub.description }}</div>
+            <div>ADDRESS: {{ pub.address }}</div>
+            <div>WEBSITE: {{ pub.website}}</div>
+
+            <form action="{% url 'blightyapp:patron_pub_list' %}" method="POST">
+            {% csrf_token %}
+            {% if pub.patron_pub.id is not None %}
+                <input type="hidden"  id="patron_pub_id" name="patron_pub_id" value="{{ pub.patron_pub.id }}">                    
+            {% else %}            
+                <input type="hidden"  id="patron_pub_id" name="patron_pub_id" value="">
+            {% endif %}
+                <input type="hidden" id="is_wished" name="is_wished" value="True" />
+                <input type="hidden"  id="is_visited" name="is_visited" value="False">
+                <input type="hidden"  id="pub_id" name="pub_id" value="{{ pub.id }}">
+                <input type="submit" value="wish" />                
+            </form>
+
+            <form action="{% url 'blightyapp:patron_pub_list' %}" method="POST">
+            {% csrf_token %}
+            {% if pub.patron_pub.id is not None %}
+                <input type="hidden"  id="patron_pub_id" name="patron_pub_id" value="{{ pub.patron_pub.id }}">                    
+            {% else %}
+                <input type="hidden"  id="patron_pub_id" name="patron_pub_id" value="">
+            {% endif %}
+                <input type="hidden" id="is_wished" name="is_wished" value="False" />
+                <input type="hidden"  id="is_visited" name="is_visited" value="True">
+                <input type="hidden"  id="pub_id" name="pub_id" value="{{ pub.id }}">
+                <input type="submit" value="visited" />
+            </form>
+            
+        </div>
         {% endfor %}
     </section>
 
     {% endblock %}
 
     
-
+{% if book.id is not None %}
+        <form action="{% url 'libraryapp:book' book.id %}" method="post">
+    {% else %}
+        <form action="{% url 'libraryapp:books' %}" method="post">
+    {% endif %}
  
