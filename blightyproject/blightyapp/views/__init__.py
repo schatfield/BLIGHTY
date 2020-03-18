@@ -4,3 +4,5 @@ from .register.register_user import register_user
 from .auth.logout import logout_user
 from .patrons.patron_pubs_list import patron_pub_list
 from .experiences.experience_form import experience_form
+from .experiences.experience_list import experience_list
+
