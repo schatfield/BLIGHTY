@@ -22,7 +22,7 @@ class PatronPub (models.Model):
         verbose_name_plural = ("patron_pubs")
 
     def __str__(self):
-        return self.Pub.name
+        return f"PatronPub record with id {self.id}"
         # if I wanted to return the pub name that was a Patron's pub, does that make sense and if so is this close to how one would do that?
 
     def get_absolute_url(self):
