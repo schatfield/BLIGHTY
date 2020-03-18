@@ -19,7 +19,7 @@ def patron_pub_list(request):
         print('PPID!!!!', patron_pub_id)
 
 
-        # "not" acts like a bang? so this is saying if there is a patron pub id post the request made by way of a form data object and construct it like this
+        # "not" acts like a bang? so this is saying if there is not a patron pub id post the request made by way of a form data object and construct it like this
         if not patron_pub_id:
             new_patron_pub = PatronPub(
                 patron_id = request.user.patron.id,
@@ -35,7 +35,19 @@ def patron_pub_list(request):
             new_patron_pub.save()
             
         else: 
-            print('PUT!!!!')
+            patron_pub = PatronPub.objects.get(id=patron_pub_id)   
+            
+            is_wished_button = form_data['is_wished'] == "True"
+            
+            if is_wished_button:
+                print("IS WISHED")                
+                patron_pub.is_wished = not patron_pub.is_wished 
+
+            else:
+                print("IS VISITED")
+                patron_pub.is_visited = not patron_pub.is_visited
+                
+            patron_pub.save()
         
                 
 
