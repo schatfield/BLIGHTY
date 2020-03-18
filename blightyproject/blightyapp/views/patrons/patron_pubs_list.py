@@ -19,7 +19,7 @@ def patron_pub_list(request):
         print('PPID!!!!', patron_pub_id)
 
 
-        # "not" acts like a bang? so this is saying if there is not a patron pub id post the request made by way of a form data object and construct it like this
+        # this is saying if there is not a patron pub id present, post the request made by way of a form data object and construct it like this
         if not patron_pub_id:
             new_patron_pub = PatronPub(
                 patron_id = request.user.patron.id,
@@ -40,11 +40,9 @@ def patron_pub_list(request):
             is_wished_button = form_data['is_wished'] == "True"
             
             if is_wished_button:
-                print("IS WISHED")                
                 patron_pub.is_wished = not patron_pub.is_wished 
 
             else:
-                print("IS VISITED")
                 patron_pub.is_visited = not patron_pub.is_visited
                 
             patron_pub.save()
@@ -75,17 +73,3 @@ def patron_pub_list(request):
 
     
 
-
-        # and then save to the db
-        # print(new_book.librarian.user.username) = prints user username
-
-        # Or...
-        # Use a shortcut to do both at the same time
-        # new_book = Book.objects.create(
-        #     title = form_data['title'],
-        #     author = form_data['author'],
-        #     isbn = form_data['isbn'],
-        #     year = form_data['year_published'],
-        #     location_id = request.user.librarian.id,
-        #     librarian_id = form_data["location"]
-        # )

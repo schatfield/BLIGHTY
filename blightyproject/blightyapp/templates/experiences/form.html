@@ -9,11 +9,9 @@
 <body>
     <h1> My Experience at {{ patron_pub.pub.name }}</h1>
 
-    <form action="{% url 'blightyapp:home' %}" method="post">
+    <form action="{% url 'blightyapp:experience_list' %}" method="post">
       {% csrf_token %}
-
-          </select>
-      </fieldset>
+    
       <fieldset>
           <label for="beers_tried">Beers Tried: </label>
           <input id="beers" type="text" name="beers">
@@ -26,8 +24,11 @@
           <label for="experience">Experience: </label>
           <input id="Experience" type="text" name="experience">
       </fieldset>
-
-      <input type="submit" value="Add It" />
+ 
+        {% comment %} Add hidden field with patron pub id {% endcomment %}
+            <input type="hidden"  id="patron_pub_id" name="patron_pub_id" value="{{ patron_pub.id }}">
+            <input type="submit" value="Add It" />
+     
     </form>
   </body>
 </html>
