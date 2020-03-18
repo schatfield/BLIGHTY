@@ -11,6 +11,7 @@ urlpatterns = [
     # path('region/<:region_id>/pubs/', pub_list, name='pubs'),
     path('regions/', region_list, name='home'),
     path('regions/<int:region_id>/', region_details, name='region'),
+    path('experiences/<int:patron_pub_id>/', experience_form, name='experience_form'),
     path('patron_pub/', patron_pub_list, name='patron_pub_list'),
     #     Added a route for gettting the register form and submitting register form data
     path('accounts/', include('django.contrib.auth.urls')),

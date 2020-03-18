@@ -44,6 +44,12 @@
                 <input type="hidden"  id="pub_id" name="pub_id" value="{{ pub.id }}">
                 <input type="submit" value="visited" />
             </form>
+
+            {% if pub.patron_pub.id is not None %}
+                <a href ={% url 'blightyapp:experience_form' pub.patron_pub.id %} class='' style="" >
+                 Add Experience
+                </a>
+            {% endif %}
             
         </div>
         {% endfor %}
