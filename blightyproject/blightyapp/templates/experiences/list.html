@@ -1,0 +1,30 @@
+{% extends 'shared/base.html' %}
+
+{% block content %}
+
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Experiences</title>
+  </head>
+  <body>
+    <h1>Experiences</h1>
+    <ol>
+
+    {% for experience in all_experiences %}
+
+    <div>
+        <h2>{{experience.pub.name}}</h2>
+        <p>Beers Drank: {{experience.beers_tried}}</p>
+        <p>Food Ate: {{experience.food_ate}}</p>
+        <p>Experience: {{experience.experience}}</p>
+    </div>
+    
+    {% endfor %}
+    </ol>
+  </body>
+</html>
+
+{% endblock %}
