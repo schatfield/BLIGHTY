@@ -46,11 +46,10 @@ def patron_pub_list(request):
                 patron_pub.is_visited = not patron_pub.is_visited
                 
             patron_pub.save()
-        
-                
+       
+    return redirect(reverse('blightyapp:home'))
 
-        
-        """ 
+    """ 
             To do: assign the value of the patron_pub_id input field from the hidden form to a variable
             Conditionals
             First: we have to check if the value of patron_pub_id is none or some sort of empty string- print to see what is return to define this. 
@@ -59,10 +58,6 @@ def patron_pub_list(request):
         
         """
 
-
-        # instantiate...
-       
-    return redirect(reverse('blightyapp:home'))
 
 # zee shortcuts frauline:
 # shift option command right arrow = multiple cursors down a list of stuff

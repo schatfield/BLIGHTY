@@ -46,5 +46,3 @@ def experience_list(request):
 
 
 
-
-        # add_experience_button = form_data['experience'] == "True"

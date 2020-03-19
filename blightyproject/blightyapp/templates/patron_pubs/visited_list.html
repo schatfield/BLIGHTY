@@ -1,0 +1,26 @@
+
+{% extends 'shared/base.html' %}
+
+{% block content %}
+
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My Pubs</title>
+  </head>
+  <body>
+    <h1>My Pubs</h1>
+   <div>
+        {% for visited_pub in visited_pubs %}
+    <div>
+            {{ visited_pub.pub.name }}
+
+    </div>
+    {% endfor %}
+    </ol>
+  </body>
+</html>
+
+{% endblock %}
