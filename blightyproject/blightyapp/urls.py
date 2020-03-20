@@ -7,9 +7,8 @@ from django.urls import include, path
 app_name = "blightyapp"
 
 urlpatterns = [
-    # path('', pub_list, name='home'),
-    # path('region/<:region_id>/pubs/', pub_list, name='pubs'),
-    path('regions/', region_list, name='home'),
+    path('home', home, name='home'),
+    path('regions/', region_list, name='region_list'),
     path('regions/<int:region_id>/', region_details, name='region'),
     path('experiences/', experience_list, name='experience_list'),
     path('experiences/<int:patron_pub_id>/form/', experience_form, name='experience_form'),
