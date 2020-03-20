@@ -1,7 +1,7 @@
 import sqlite3
 from django.urls import reverse
 from django.shortcuts import render, redirect
-# from django.contrib.auth.decorators import login_required
+from django.contrib.auth.decorators import login_required
 from blightyapp.models import Region, Pub, PatronPub
 
 
@@ -10,7 +10,7 @@ def get_region_pubs(region_id):
     return Pub.objects.all().filter(region_id=region_id).prefetch_related()
 
 
-# @login_required
+@login_required
 def region_details(request, region_id):
 
     """ This function GETs pubs by region (region_details) and loops through each pub """

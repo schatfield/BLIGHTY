@@ -1,3 +1,9 @@
+
+{% extends 'shared/base.html' %}
+
+{% block content %}
+
+{% load static %}
 <!DOCTYPE html>
 <html>
 
@@ -14,23 +20,23 @@
     
       <fieldset>
           <label for="beers_tried">Beers Tried: </label>
-          <input id="beers" type="text" name="beers">
+          <input id="beers" type="text" name="beers" value="{{patron_pub.beers_tried}}">
       </fieldset>
       <fieldset>
           <label for="food_ate">Food Ate: </label>
-          <input id="food" type="text" name="food">
+          <input id="food" type="text" name="food" value="{{patron_pub.food_ate}}">
       </fieldset>
       <fieldset>
           <label for="experience">Experience: </label>
-          <input id="Experience" type="text" name="experience">
+          <input id="Experience" type="text" name="experience" value="{{patron_pub.experience}}">
       </fieldset>
  
-        {% comment %} Add hidden field with patron pub id {% endcomment %}
+        {% comment %} Add hidden field with patron pub id to send it to the view?{% endcomment %}
             <input type="hidden"  id="patron_pub_id" name="patron_pub_id" value="{{ patron_pub.id }}">
             <input type="submit" value="Add It" />
      
     </form>
   </body>
 </html>
-    
+{% endblock %}
         

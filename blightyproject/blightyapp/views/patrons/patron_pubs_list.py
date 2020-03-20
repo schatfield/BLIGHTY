@@ -1,5 +1,6 @@
 import sqlite3
 from django.shortcuts import redirect, render, reverse
+from django.contrib.auth.decorators import login_required
 from blightyapp.models import PatronPub, Pub
 
 
@@ -8,7 +9,7 @@ from blightyapp.models import PatronPub, Pub
 This view is what controls what happens when a user clicks wished/visited button on region_details form 
 
 """
-
+@login_required
 def patron_pub_list(request):
 
     if request.method == 'POST':        
@@ -46,23 +47,18 @@ def patron_pub_list(request):
                 patron_pub.is_visited = not patron_pub.is_visited
                 
             patron_pub.save()
-        
-                
-
-        
-        """ 
-            To do: assign the value of the patron_pub_id input field from the hidden form to a variable
-            Conditionals
-            First: we have to check if the value of patron_pub_id is none or some sort of empty string- print to see what is return to define this. 
-            If it's empty, it is a post (nothing to PUT yet) - POST functionality is currently working
-            Else we are gonna make a put - PUT needs to be written
-        
-        """
-
-
-        # instantiate...
        
     return redirect(reverse('blightyapp:home'))
+
+    # """ 
+    #         To do: assign the value of the patron_pub_id input field from the hidden form to a variable
+    #         Conditionals
+    #         First: we have to check if the value of patron_pub_id is none or some sort of empty string- print to see what is return to define this. 
+    #         If it's empty, it is a post (nothing to PUT yet) - POST functionality is currently working
+    #         Else we are gonna make a put - PUT needs to be written
+        
+    #     """
+
 
 # zee shortcuts frauline:
 # shift option command right arrow = multiple cursors down a list of stuff
