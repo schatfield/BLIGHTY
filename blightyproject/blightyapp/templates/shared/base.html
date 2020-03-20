@@ -25,12 +25,18 @@
     <nav id="site-nav">
         <ol class="navList">
             <li class="navList__route"><a href="{% url 'blightyapp:home' %}">Pub Guide</a></li>
-            <li class="navList__route"><a href="{% url 'blightyapp:home' %}">My Pubs</a></li>
-            <li class="navList__route"><a href="{% url 'blightyapp:home' %}">Visited</a></li>
-            <li class="navList__route"><a href="{% url 'blightyapp:home' %}">Experiences</a></li> 
-            <li class="navList__route"><a href="{% url 'blightyapp:login' %}">Login</a></li>
-            <li class="navList__route"><a href="{% url 'blightyapp:register' %}">Sign Up</a></li>
-            <li class="navList__route"><a href="{% url 'blightyapp:logout' %}">Logout</a></li>
+            <li class="navList__route"><a href="{% url 'blightyapp:wish_list' %}">My Pubs</a></li>
+            <li class="navList__route"><a href="{% url 'blightyapp:visited_list' %}">Visited</a></li>
+            <li class="navList__route"><a href="{% url 'blightyapp:experience_list' %}">Experiences</a></li> 
+            
+            
+           {% if request.user.is_authenticated %}
+
+                <li class="navList__route"><a href="{% url 'blightyapp:logout' %}">Logout</a></li>
+            {% else %}
+                <li class="navList__route"><a href="{% url 'blightyapp:login' %}">Login</a></li>
+                <li class="navList__route"><a href="{% url 'blightyapp:register' %}">Sign Up</a></li>
+            {% endif %}
         </ol>
     </nav>
 

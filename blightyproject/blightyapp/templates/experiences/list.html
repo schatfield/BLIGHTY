@@ -21,6 +21,20 @@
         <p>Food Ate: {{experience.food_ate}}</p>
         <p>Experience: {{experience.experience}}</p>
     </div>
+
+        <div>
+        <form action="{% url 'blightyapp:experience_form' experience.id %}" method="POST">
+            {% csrf_token %}
+            <input type="hidden" name="actual_method" value="DELETE">
+            <button>Delete</button>
+        </form>
+
+         <form action="{% url 'blightyapp:experience_edit_form' experience.id %}" method="GET">
+            {% csrf_token %}
+            <button>Edit</button>
+        </form>
+        </div> 
+  
     
     {% endfor %}
     </ol>
