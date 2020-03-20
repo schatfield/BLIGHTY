@@ -1,9 +1,10 @@
 import sqlite3
 from django.shortcuts import redirect, render, reverse
+from django.contrib.auth.decorators import login_required
 from blightyapp.models import PatronPub, Pub
 
 
-
+@login_required
 def patron_visited(request):
     print('VISITED!')
     if request.method == 'GET':

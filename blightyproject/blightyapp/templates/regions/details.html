@@ -55,12 +55,6 @@
         {% endfor %}
     </section>
 
-    {% endblock %}
+{% endblock %}
 
     
-{% if book.id is not None %}
-        <form action="{% url 'libraryapp:book' book.id %}" method="post">
-    {% else %}
-        <form action="{% url 'libraryapp:books' %}" method="post">
-    {% endif %}
- 

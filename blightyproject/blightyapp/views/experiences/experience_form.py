@@ -1,6 +1,6 @@
 import sqlite3
 from django.shortcuts import redirect, render, reverse
-# from django.contrib.auth.decorators import login_required
+from django.contrib.auth.decorators import login_required
 from blightyapp.models import PatronPub
 from blightyapp.models import Pub
 
@@ -9,7 +9,7 @@ def get_patron_pub(patron_pub_id):
     return PatronPub.objects.get(id=patron_pub_id)
 
 
-# @login_required
+@login_required
 def experience_form(request, patron_pub_id):
     # this is getting the patron_pub record form the data and is available to the whole function
     patron_pub = get_patron_pub(patron_pub_id)   
@@ -44,7 +44,7 @@ def experience_form(request, patron_pub_id):
 
             return redirect(reverse('blightyapp:experience_list'))
 
-# @login_required
+@login_required
 def experience_edit_form(request, patron_pub_id):  
 
     if request.method == 'GET':

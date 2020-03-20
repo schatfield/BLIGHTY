@@ -1,8 +1,9 @@
 import sqlite3
 from django.shortcuts import redirect, render, reverse
+from django.contrib.auth.decorators import login_required
 from blightyapp.models import PatronPub, Pub
 
-
+@login_required
 def experience_list(request):
     if request.method == 'POST':        
         form_data = request.POST
@@ -10,7 +11,7 @@ def experience_list(request):
         # testing to see if we are getting anything in the terminal
         # experience = form_data['beers']
         # print('experience!!!!', experience)
-
+        #Order of OPS:
         # Todo: Get patron pub id off form - why
         # Todo: Get patron pub record using patron pub id- why
         # Todo: Update properties on patron pub records using form data, and set has_experience to true- how 
