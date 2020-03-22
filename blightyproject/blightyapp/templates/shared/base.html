@@ -18,6 +18,7 @@
             margin: 0 0.5em;
         }
     </style>
+    <script src="https://kit.fontawesome.com/9d307a4f50.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -26,12 +27,13 @@
         <ol class="navList">
             <li class="navList__route"><a href="{% url 'blightyapp:home'%}">BLIGHTY</a></li>
             <li class="navList__route"><a href="{% url 'blightyapp:region_list' %}">Pub Guide</a></li>
-            <li class="navList__route"><a href="{% url 'blightyapp:wish_list' %}">My Pubs</a></li>
-            <li class="navList__route"><a href="{% url 'blightyapp:visited_list' %}">Visited</a></li>
-            <li class="navList__route"><a href="{% url 'blightyapp:experience_list' %}">Experiences</a></li> 
+
             
             
            {% if request.user.is_authenticated %}
+            <li class="navList__route"><a href="{% url 'blightyapp:wish_list' %}">My Pubs</a></li>
+            <li class="navList__route"><a href="{% url 'blightyapp:visited_list' %}">Visited</a></li>
+            <li class="navList__route"><a href="{% url 'blightyapp:experience_list' %}">Experiences</a></li> 
                 <li class="navList__route"><a href="{% url 'blightyapp:logout' %}">Logout</a></li>
             {% else %}
                 <li class="navList__route"><a href="{% url 'blightyapp:login' %}">Login</a></li>

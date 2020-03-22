@@ -1,0 +1,103 @@
+[
+  {
+    "model": "blightyapp.region",
+    "pk": 1,
+    "fields": {
+      "name": "Southeast"
+    }
+  },
+  {
+    "model": "blightyapp.region",
+    "pk": 2,
+    "fields": {
+      "name": "Southwest"
+    }
+  },
+  {
+    "model": "blightyapp.region",
+    "pk": 3,
+    "fields": {
+      "name": "The Midlands"
+    }
+  },
+  {
+    "model": "blightyapp.region",
+    "pk": 4,
+    "fields": {
+      "name": "The East"
+    }
+  },
+  {
+    "model": "blightyapp.region",
+    "pk": 5,
+    "fields": {
+      "name": "Northeast"
+    }
+  },
+
+  {
+    "model": "blightyapp.region",
+    "pk": 6,
+    "fields": {
+      "name": "Northwest"
+    }
+  },
+  {
+    "model": "blightyapp.pub",
+    "pk": 1,
+    "fields": {
+      "name": "The Five Alls",
+      "description": "Tucked in the quaint Cotswolds village of Filkins, The Five Alls ofers an exciting blend of traditional English fare with an Italian twist. The honeystone inn covered in climbing plants exudes country appeal – this is a theme that continues inside, with logs piled high, charming fagstone foors and a cosy freplace to gather around. Seasonal cocktails, The Five Alls' house ale and an extensive wine list ofer a tipple for every taste, while a menu infuenced by the town's artisan producers promises a foodie treat, combined with the head chef's Italian connections. Upstairs, there are four en-suite rooms above the inn and a further fve bespoke bedrooms reached from the picturesque garden.",
+      "address": "Filkins, Lechlade GL7 3JQ",
+      "website": "https://thefiveallsfilkins.co.uk/",
+      "image_path": "image.png",
+      "region_id": 1
+    }
+  },
+  {
+    "model": "blightyapp.pub",
+    "pk": 2,
+    "fields": {
+      "name": "The Five Alls",
+      "description": "Tucked in the quaint Cotswolds village of Filkins, The Five Alls ofers an exciting blend of traditional English fare with an Italian twist. The honeystone inn covered in climbing plants exudes country appeal – this is a theme that continues inside, with logs piled high, charming fagstone foors and a cosy freplace to gather around. Seasonal cocktails, The Five Alls' house ale and an extensive wine list ofer a tipple for every taste, while a menu infuenced by the town's artisan producers promises a foodie treat, combined with the head chef's Italian connections. Upstairs, there are four en-suite rooms above the inn and a further fve bespoke bedrooms reached from the picturesque garden.",
+      "address": "Filkins, Lechlade GL7 3JQ",
+      "website": "https://thefiveallsfilkins.co.uk/",
+      "image_path": "image.png",
+      "region_id": 2
+    }
+  },
+  {
+    "model": "blightyapp.pub",
+    "pk": 3,
+    "fields": {
+      "name": "The Five Alls",
+      "description": "Tucked in the quaint Cotswolds village of Filkins, The Five Alls ofers an exciting blend of traditional English fare with an Italian twist. The honeystone inn covered in climbing plants exudes country appeal – this is a theme that continues inside, with logs piled high, charming fagstone foors and a cosy freplace to gather around. Seasonal cocktails, The Five Alls' house ale and an extensive wine list ofer a tipple for every taste, while a menu infuenced by the town's artisan producers promises a foodie treat, combined with the head chef's Italian connections. Upstairs, there are four en-suite rooms above the inn and a further fve bespoke bedrooms reached from the picturesque garden.",
+      "address": "Filkins, Lechlade GL7 3JQ",
+      "website": "https://thefiveallsfilkins.co.uk/",
+      "image_path": "image.png",
+      "region_id": 4
+    }
+  },
+  {
+    "model": "blightyapp.patronpub",
+    "pk": 1,
+    "fields": {
+      "patron": 1,
+      "pub": 1,
+      "is_wished": false,
+      "is_visited": false,
+      "has_experience": false,
+      "beers_tried": "Gloucester Golden Ale",
+      "food_ate": "Fish Cakes",
+      "experience": "Cozy and I want to live there."
+    }
+  },
+  {
+    "model": "blightyapp.pubimage",
+    "pk": 1,
+    "fields": {
+      "pub_id": 1,
+      "image_path": "image.png"
+    }
+  }
+]
