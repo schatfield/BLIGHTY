@@ -4,15 +4,8 @@
 {% block content %}
 
 {% load static %}
-<!DOCTYPE html>
-<html>
 
-<head>
-    <meta charset="utf-8">
-    <title>BLIGHTY</title>
-</head>
-
-<body>
+<section class="template-container">
     <h1> My Experience at {{ patron_pub.pub.name }}</h1>
 
     <form action="{% url 'blightyapp:experience_list' %}" method="post">
@@ -35,8 +28,8 @@
             <input type="hidden"  id="patron_pub_id" name="patron_pub_id" value="{{ patron_pub.id }}">
             <input type="submit" value="Add It" />
      
-    </form>
-  </body>
-</html>
+        </form>
+    </section>
+
 {% endblock %}
         

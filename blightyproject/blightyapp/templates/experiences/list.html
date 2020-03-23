@@ -1,20 +1,10 @@
 {% extends 'shared/base.html' %}
-
 {% block content %}
-
 {% load static %}
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Experiences</title>
-  </head>
-  <body>
+
+<section class="template-container">
     <h1>Experiences</h1>
-    <ol>
-
     {% for experience in all_experiences %}
-
     <div>
         <h2>{{experience.pub.name}}</h2>
         <p>Beers Drank: {{experience.beers_tried}}</p>
@@ -22,7 +12,7 @@
         <p>Experience: {{experience.experience}}</p>
     </div>
 
-        <div>
+    <div>
         <form action="{% url 'blightyapp:experience_form' experience.id %}" method="POST">
             {% csrf_token %}
             <input type="hidden" name="actual_method" value="DELETE">
@@ -33,12 +23,7 @@
             {% csrf_token %}
             <button>Edit</button>
         </form>
-        </div> 
-  
-    
+      </div>    
     {% endfor %}
-    </ol>
-  </body>
-</html>
-
+  </section>
 {% endblock %}

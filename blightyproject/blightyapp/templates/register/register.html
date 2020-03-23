@@ -2,9 +2,9 @@
 {% extends 'shared/base.html' %}
 
 {% block content %}
-
+<section class="template-container">
 <h2>Register</h2>
-<form method="post">
+    <form method="post">
     {% csrf_token %}
 <!--     These values will be saved as part of a new User instance -->
     <input type="text" placeholder="username" name="username">
@@ -16,5 +16,6 @@
     {% comment %} <input type="text" placeholder="favorite color" name="fave_color"> {% endcomment %}
   
     <button type="submit">Register</button>
-</form>
-{% endblock %}
+    </form>
+</section>
+{% endblock %} 
