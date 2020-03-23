@@ -4,39 +4,34 @@
 
 <head>
     <meta charset="utf-8">
-    <title>BLIGHTY</title>
+    <title class="app-title">BLIGHTY</title>
 
-    <style>
-        .navList {
-            list-style-type: none;
-            display: flex;
-            border: 1px solid lightgray;
-            padding: 1em;
-        }
-
-        .navList__route {
-            margin: 0 0.5em;
-        }
-    </style>
+    <script src="https://kit.fontawesome.com/9d307a4f50.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/base.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&family=Muli&family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+   {% block extrahead %}{% endblock %}
 </head>
 
 <body>
 
     <nav id="site-nav">
-        <ol class="navList">
-            <li class="navList__route"><a href="{% url 'blightyapp:home' %}">Pub Guide</a></li>
-            <li class="navList__route"><a href="{% url 'blightyapp:wish_list' %}">My Pubs</a></li>
-            <li class="navList__route"><a href="{% url 'blightyapp:visited_list' %}">Visited</a></li>
-            <li class="navList__route"><a href="{% url 'blightyapp:experience_list' %}">Experiences</a></li> 
+            <li class="nav-logo"><a href="{% url 'blightyapp:home'%}">B L I G H T Y</a></li>
+            <li class="navList__route"><a href="{% url 'blightyapp:region_list' %}">Pub Guide</a></li>
+
             
             
            {% if request.user.is_authenticated %}
+                <li class="navList__route"><a href="{% url 'blightyapp:wish_list' %}">My Pubs</a></li>
+                <li class="navList__route"><a href="{% url 'blightyapp:visited_list' %}">Visited</a></li>
+                <li class="navList__route"><a href="{% url 'blightyapp:experience_list' %}">Experiences</a></li> 
                 <li class="navList__route"><a href="{% url 'blightyapp:logout' %}">Logout</a></li>
             {% else %}
                 <li class="navList__route"><a href="{% url 'blightyapp:login' %}">Login</a></li>
                 <li class="navList__route"><a href="{% url 'blightyapp:register' %}">Sign Up</a></li>
             {% endif %}
-        </ol>
+
     </nav>
 
     {% block content %}

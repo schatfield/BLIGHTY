@@ -1,0 +1,49 @@
+ body {
+    background-color: #fbfbfb;
+} 
+
+
+text {
+
+  color: black;
+
+} 
+
+#site-nav {
+  position: fixed;
+  background-color: #fbfbfb;
+  top: 0;
+  list-style-type: none;
+  width: 100%;      
+  display: flex;
+  padding-top: 1em;   
+} 
+
+
+.navList__route {
+    margin: 15px;
+    font-family: 'Libre Caslon Display', serif;
+    font-size: 16px;
+    padding-top: 0;
+  }
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: grey;
+}
+
+
+.template-container{
+    padding-top: 50px;
+}  
+
+.nav-logo{
+  width: 70%;
+  font-family: 'Playfair Display', serif;
+
+}
+  

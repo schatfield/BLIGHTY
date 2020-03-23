@@ -7,4 +7,5 @@ from .experiences.experience_form import experience_form, experience_edit_form
 from .experiences.experience_list import experience_list
 from .patrons.patron_wish_list import patron_wished
 from .patrons.patron_visited_list import patron_visited
+from .home import home
 

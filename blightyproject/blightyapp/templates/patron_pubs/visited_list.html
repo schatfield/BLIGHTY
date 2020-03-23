@@ -4,17 +4,13 @@
 {% block content %}
 
 {% load static %}
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>My Pubs</title>
-  </head>
-  <body>
+
+<section class="template-container">
     <h1>My Pubs</h1>
    <div>
         {% for visited_pub in visited_pubs %}
     <div>
+            <div><img src="{% static visited_pub.pub.image_path %}" alt="My image"></div>
             {{ visited_pub.pub.name }}
             <form action="{% url 'blightyapp:patron_pub_list' %}" method="POST">
             {% csrf_token %}
@@ -29,7 +25,14 @@
                 <input type="hidden" id="is_wished" name="is_wished" value="True" />
                 <input type="hidden"  id="is_visited" name="is_visited" value="False">
                 <input type="hidden"  id="pub_id" name="pub_id" value="{{ visited_pub.pub.id }}">
-                <input type="submit" value="wish" />                
+                <input type="hidden"  id="region_id" name="region_id" value="{{ visited_pub.pub.region_id }}">
+                <input type="hidden"  id="context" name="context" value="visited_list">
+           
+            {% if visited_pub.is_wished%}
+                <button type="submit"> <i class="fas fa-heart"></i> </button>   
+            {% else %}   
+                 <button type="submit"> <i class="far fa-heart"></i> </button>   
+            {% endif %} 
             </form>
 
             <form action="{% url 'blightyapp:patron_pub_list' %}" method="POST">
@@ -42,19 +45,23 @@
                 <input type="hidden" id="is_wished" name="is_wished" value="False" />
                 <input type="hidden"  id="is_visited" name="is_visited" value="True">
                 <input type="hidden"  id="pub_id" name="pub_id" value="{{ visited_pub.pub.id }}">
-                <input type="submit" value="visited" />
+                <input type="hidden"  id="region_id" name="region_id" value="{{ visited_pub.pub.region_id }}">
+                <input type="hidden"  id="context"  name="context" value="visited_list">
+            
+            {% if wished_pub.is_visited%} 
+                <button type="submit"> <i class="fas fa-check-square"></i> </button>   
+             {% else %}
+                <button type="submit"> <i class="far fa-check-square"></i> </button>   
+            {% endif %}  
             </form>
 
             {% if "" is not None %}
                 <a href ={% url 'blightyapp:experience_form' visited_pub.id %} class='' style="" >
-                 Add Experience
+               <i class="fas fa-plus-square"></i> 
                 </a>
             {% endif %}
             
         </div>
         {% endfor %}
     </section>
-  </body>
-</html>
-
 {% endblock %}

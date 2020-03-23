@@ -1,21 +1,30 @@
-
-
 {% extends 'shared/base.html' %}
+{% load static %}
+{% block extrahead %}
+<link rel="stylesheet" type="text/css" href="{% static "styles/details.css" %}">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&family=Muli&family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+{% endblock %}
+
+
 
 {% block content %}
 
+    <section class="template-container">
 
-    <section id="region-details">
-        <h1>{{ region.name }}</h1>
+        <h1>{{ pub.region.name }}</h1>
        
        {% for pub in pubs %}
 
-       <div>  
-            <h2>{{ pub.name }}</h2>
-
-            <div> {{ pub.description }}</div>
-            <div>ADDRESS: {{ pub.address }}</div>
-            <div>WEBSITE: {{ pub.website}}</div>
+       <div class="pub-card">  
+            {% load static %}
+            <div class="main-image"><img src="{% static pub.image_path %}" alt=""></div>
+            <div class="pub-name">{{ pub.name }}</div>
+            </br>
+            <div class="pub-desc"> {{ pub.description }}</div>
+            </br>
+            <div class="pub-address">ADDRESS: {{ pub.address }}</div>
+            <div class="pub-web">WEBSITE: {{ pub.website}}</div>
 
             <form action="{% url 'blightyapp:patron_pub_list' %}" method="POST">
             {% csrf_token %}
@@ -29,7 +38,14 @@
                 <input type="hidden" id="is_wished" name="is_wished" value="True" />
                 <input type="hidden"  id="is_visited" name="is_visited" value="False">
                 <input type="hidden"  id="pub_id" name="pub_id" value="{{ pub.id }}">
-                <input type="submit" value="wish" />                
+                <input type="hidden"  id="region_id" name="region_id" value="{{ pub.region_id }}">
+                <input type="hidden"  name="context" value="pub_guide">
+            
+            {% if pub.patron_pub.is_wished%}
+                <button type="submit"> <i class="fas fa-heart"></i> </button>   
+            {% else %}   
+                 <button type="submit"> <i class="far fa-heart"></i> </button>   
+            {% endif %} 
             </form>
 
             <form action="{% url 'blightyapp:patron_pub_list' %}" method="POST">
@@ -42,13 +58,27 @@
                 <input type="hidden" id="is_wished" name="is_wished" value="False" />
                 <input type="hidden"  id="is_visited" name="is_visited" value="True">
                 <input type="hidden"  id="pub_id" name="pub_id" value="{{ pub.id }}">
-                <input type="submit" value="visited" />
+                <input type="hidden"  id="region_id" name="region_id" value="{{ pub.region_id }}">
+                <input type="hidden"  id="context" name="context" value="pub_guide">
+
+            {% if pub.patron_pub.is_visited%} 
+                <button type="submit"> <i class="fas fa-check-square"></i> </button>   
+             {% else %}
+                <button type="submit"> <i class="far fa-check-square"></i> </button>   
+            {% endif %} 
             </form>
 
             {% if pub.patron_pub.id is not None %}
-                <a href ={% url 'blightyapp:experience_form' pub.patron_pub.id %} class='' style="" >
-                 Add Experience
-                </a>
+                {% if pub.patron_pub.is_visited %}
+                    {% if pub.patron_pub.has_experience %}
+                        <a href ={% url 'blightyapp:experience_list' %} class='' style="" >Goooo</a>
+                    {% else %}
+                        <a href ={% url 'blightyapp:experience_form' pub.patron_pub.id %} class='' style="" >
+                        <i class="fas fa-plus-square"></i> </i>
+                    </a>
+
+                    {% endif %}
+                {% endif %}
             {% endif %}
             
         </div>

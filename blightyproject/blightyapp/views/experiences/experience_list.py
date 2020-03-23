@@ -32,7 +32,7 @@ def experience_list(request):
         # saving updated patron_pub record with the added experience
         patron_pub.save()
 
-        return redirect(reverse('blightyapp:home'))
+        return redirect(reverse('blightyapp:visited_list'))
 
     elif request.method == 'GET':
         patron_id = request.user.patron.id
