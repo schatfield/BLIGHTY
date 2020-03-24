@@ -15,7 +15,15 @@
 <!--     This value will be saved on the new Librarian instance -->
     {% comment %} <input type="text" placeholder="favorite color" name="fave_color"> {% endcomment %}
   
-    <button type="submit">Register</button>
+    <button type="submit">Register</button>    
     </form>
+
+    {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+            <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+            {% endfor %}
+        </ul>
+{% endif %}
 </section>
 {% endblock %} 

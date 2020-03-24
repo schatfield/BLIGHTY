@@ -16,9 +16,9 @@ text {
   list-style-type: none;
   width: 100%;      
   display: flex;
-  padding-top: 1em;   
-} 
-
+  padding-top: 1em;  
+  z-index: 2; 
+}
 
 .navList__route {
     margin: 15px;
@@ -44,6 +44,7 @@ a:hover {
 .nav-logo{
   width: 70%;
   font-family: 'Playfair Display', serif;
+  z-index: 10;
 
 }
   

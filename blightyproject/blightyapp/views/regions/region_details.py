@@ -20,7 +20,7 @@ def region_details(request, region_id):
         patron_id = request.user.patron.id
         for pub in pubs:
             """ This line is making a call to get the PatronPub record in the data for the pub with filter method (filter is like saying "where") """
-
+            print(pub.region)
             patron_pub = PatronPub.objects.filter(pub_id=pub.id, patron_id=patron_id)             
             
             """ We are going to add a new Patron Pub Property on every Pub """
