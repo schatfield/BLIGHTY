@@ -43,7 +43,8 @@ a:hover {
 
 .nav-logo{
   width: 70%;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Libre Caslon Display', serif;
+  font-weight: 900;
   z-index: 10;
 
 }
