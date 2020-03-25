@@ -8,7 +8,7 @@
 <section class="template-container">
     <h1> My Experience at {{ patron_pub.pub.name }}</h1>
 
-    <form action="{% url 'blightyapp:experience_list' %}" method="post">
+    <form action="{% url 'blightyapp:experience_list' %}?next={{next_url}}" method="post">
       {% csrf_token %}
     
       <fieldset>
@@ -25,7 +25,10 @@
       </fieldset>
  
         {% comment %} Add hidden field with patron pub id to send it to the view?{% endcomment %}
+            <input type="hidden"  id="region_id" name="region_id" value="{{ patron_pub.region_id }}">
             <input type="hidden"  id="patron_pub_id" name="patron_pub_id" value="{{ patron_pub.id }}">
+            <input type="hidden"  id="context"  name="context" value="region_detail">
+
             <input type="submit" value="Add It" />
      
         </form>

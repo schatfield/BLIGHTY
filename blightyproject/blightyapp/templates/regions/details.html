@@ -3,7 +3,7 @@
 {% block extrahead %}
 <link rel="stylesheet" type="text/css" href="{% static "styles/details.css" %}">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap" rel="stylesheet">
-CSS rules to spe<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&family=Muli&family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&family=Muli&family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 {% endblock %}
 
@@ -76,10 +76,12 @@ CSS rules to spe<link href="https://fonts.googleapis.com/css2?family=Libre+Caslo
                         {% if pub.patron_pub.id is not None %}
                             {% if pub.patron_pub.is_visited %}
                                 {% if pub.patron_pub.has_experience %}
-                                    <a href ={% url 'blightyapp:experience_list' %} class='' style=""></a>
+                                   <button class="plus" type="submit"> <a href ={% url 'blightyapp:experience_list' %} class='' style="">
+                                    <i class="fas fa-plus-square"></i></button>
+                                </a>
                                 {% else %}
-                                    <button class="plus" type="submit"><a href ={% url 'blightyapp:experience_form' pub.patron_pub.id %} class='' style="">
-                                    <i class="fas fa-plus-square"></i> </i></button>
+                                    <button class="plus" type="submit"> <a href ={% url 'blightyapp:experience_form' pub.patron_pub.id %} class='' style="">
+                                    <i class="far fa-plus-square"></i> </button>
                                 </a>
 
                                 {% endif %}
