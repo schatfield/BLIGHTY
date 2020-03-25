@@ -11,7 +11,7 @@ text {
 
 #site-nav {
   position: fixed;
-  background-color: #fbfbfb;
+  /* background-color: #fbfbfb; */
   top: 0;
   list-style-type: none;
   width: 100%;      
@@ -47,4 +47,9 @@ a:hover {
   z-index: 10;
 
 }
-  
+
+
+
+
+
+
