@@ -6,23 +6,27 @@
 {% load static %}
 
 <section class="template-container">
-    <h1>My Pubs</h1>
+    <h1>VISITED</h1>
    <div>
         {% for visited_pub in visited_pubs %}
     <div>
             <div><img src="{% static visited_pub.pub.image_path %}" alt="My image"></div>
             {{ visited_pub.pub.name }}
+
+            {% comment %} this may be the visit list template, but we are directing the data collected from the visitied list template and sending it to the patron pub list function  in the patron pub list view. we are handling all of our logic in one place{% endcomment %}
             <form action="{% url 'blightyapp:patron_pub_list' %}" method="POST">
             {% csrf_token %}
             {% comment %} the conditionals below are checking for a patron pub record to show things a user has already liked/visited when they go to the page so that their likes and visited shows up for the on the region details page -tracking their usage history basically and the icons will show liked/visited with CSS {% endcomment %}
-            {% if "" is not None %}
+            {% if visited_pub is not None %}
             {% comment %} these fields pass information in hidden fields to the view {% endcomment %}
                 <input type="hidden"  id="patron_pub_id" name="patron_pub_id" value="{{ visited_pub.id }}">
                                     
             {% else %}            
                 <input type="hidden"  id="patron_pub_id" name="patron_pub_id" value="">
             {% endif %}
-                <input type="hidden" id="is_wished" name="is_wished" value="True" />
+
+            {% comment %}this never changes on condion, we are always sending the pub id, region id to the patron pub list. the patron pub list. this is also clarifying what is sent in a request as form data and what to check for. exmaple: if form data contains is_ wished and the value is true, this corresponds to the wush button and defines it as being clicked {% endcomment %}
+                <input type="hidden"  id="is_wished" name="is_wished" value="True" />
                 <input type="hidden"  id="is_visited" name="is_visited" value="False">
                 <input type="hidden"  id="pub_id" name="pub_id" value="{{ visited_pub.pub.id }}">
                 <input type="hidden"  id="region_id" name="region_id" value="{{ visited_pub.pub.region_id }}">
@@ -37,28 +41,35 @@
 
             <form action="{% url 'blightyapp:patron_pub_list' %}" method="POST">
             {% csrf_token %}
-            {% if "" is not None %}
+            {% if visited_pub is not None %}
                 <input type="hidden"  id="patron_pub_id" name="patron_pub_id" value="{{ visited_pub.id}}">                    
             {% else %}
                 <input type="hidden"  id="patron_pub_id" name="patron_pub_id" value="">
             {% endif %}
-                <input type="hidden" id="is_wished" name="is_wished" value="False" />
+                <input type="hidden"  id="is_wished" name="is_wished" value="False" />
                 <input type="hidden"  id="is_visited" name="is_visited" value="True">
                 <input type="hidden"  id="pub_id" name="pub_id" value="{{ visited_pub.pub.id }}">
                 <input type="hidden"  id="region_id" name="region_id" value="{{ visited_pub.pub.region_id }}">
                 <input type="hidden"  id="context"  name="context" value="visited_list">
             
-            {% if wished_pub.is_visited%} 
+            {% if visited_pub.is_visited%} 
                 <button type="submit"> <i class="fas fa-check-square"></i> </button>   
              {% else %}
                 <button type="submit"> <i class="far fa-check-square"></i> </button>   
             {% endif %}  
             </form>
 
-            {% if "" is not None %}
+            {% comment %} sends to experience list based on logged in user with help of csrf token {% endcomment %}
+            {% if visited_pub.has_experience %}
+                 <a href ={% url 'blightyapp:experience_list' %} class='' style="" >
+                <i class="fas fa-plus-square"></i> 
+                </a> 
+          
+            {% else %}
                 <a href ={% url 'blightyapp:experience_form' visited_pub.id %} class='' style="" >
-               <i class="fas fa-plus-square"></i> 
+                <i class="far fa-plus-square"></i> 
                 </a>
+            
             {% endif %}
             
         </div>
