@@ -1,13 +1,30 @@
 
 {% extends 'shared/base.html' %}
+{% load static %}
+{% block extrahead %}
+<link rel="stylesheet" type="text/css" href="{% static "styles/login.css" %}">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&family=Muli&family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+{% endblock %}
 
 {% block content %}
+<div class="parent-div">
+    <div class="login-container-left">
+        <div class="page-title">Login OR Sign Up</div>
+        <div class="register-link"> PLEASE LOGIN OR SIGN UP TO ACCESS YOUR ACCOUNT</DIV>
+    </div>
 
-<h2>Login</h2>
-<form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Login</button>
-</form>
+    <div class="login-container">
+        <form method="post">
+            {% csrf_token %}
+            <div class="welcome">HI, AGAIN!</div>
+            <div class="form">{{ form.as_p }}</div>
+            <div class="button">
+            <button class="login-button" type="submit">L O G I N</button> </div>
+        </form>
+
+    </div>
+</div>
 
 {% endblock %}

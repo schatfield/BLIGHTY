@@ -1,20 +1,30 @@
 
 {% extends 'shared/base.html' %}
+{% load static %}
+{% block extrahead %}
+<link rel="stylesheet" type="text/css" href="{% static "styles/region-list.css" %}">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&family=Muli&family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+{% endblock %}
+
 
 {% block content %}
 
-{% load static %}
+
 <section class="template-container">
  
-    <h1>Pub Guide</h1>
+    <div class="page-title">Pub Guide</div>
     
-
+    <div class="region-list-flex">
     {% for region in all_regions %}
+    
         <div classname="region-list">
              <a href="{% url 'blightyapp:region_details' region.id %}"> {{ region.name }} </a>
             
         </div>
     {% endfor %}
+    </div>
     
   
 </section>

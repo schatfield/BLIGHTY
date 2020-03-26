@@ -12,24 +12,26 @@
 {% block content %}
 
     <section class="template-container">
-
         <div class="region-name">{{ pubs.0.region }} </div>
-       
+       <div class="card-container">
        {% for pub in pubs %}
 
-       <div class="pub-card">  
+       <div class="pub-card">
+
             {% load static %}
+
             <div class="image-div">
                 <img class="main-image" src="{% static pub.image_path %}" alt="">
             </div>
-            <div>
+            
+            
             <div class="pub-div">
-                <DIV>
+                <div>
                     
-                    <div class="pub-name">{{ pub.name }}</div>
 
-                    <div class="pub-buttons">
+                    <div class="pub-title">
                   
+                        <p class="pub-name">{{ pub.name }}</p>
 
                         <form action="{% url 'blightyapp:patron_pub_list' %}" method="POST">
                         {% csrf_token %}
@@ -77,12 +79,12 @@
                             {% if pub.patron_pub.is_visited %}
                                 {% if pub.patron_pub.has_experience %}
                                    <button class="plus" type="submit"> <a href ={% url 'blightyapp:experience_list' %} class='' style="">
-                                    <i class="fas fa-plus-square"></i></button>
-                                </a>
+                                    <i class="fas fa-plus-square"></i></a></button>
+                                
                                 {% else %}
                                     <button class="plus" type="submit"> <a href ={% url 'blightyapp:experience_form' pub.patron_pub.id %} class='' style="">
-                                    <i class="far fa-plus-square"></i> </button>
-                                </a>
+                                    <i class="far fa-plus-square"></i> </a></button>
+                                
 
                                 {% endif %}
                             {% endif %}
@@ -103,17 +105,11 @@
                     </br>
                     <div class="web"> {{ pub.website}}</div>
                 </div>
-            </div>
-    
-
-
-            </div>
-        </div>
-
-
-            
-        </div>
+            </div>            
+        </div>                
         {% endfor %}
+    
+    </div>
     </section>
 
 {% endblock %}

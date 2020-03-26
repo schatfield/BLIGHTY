@@ -17,7 +17,7 @@ text {
   width: 100%;      
   display: flex;
   padding-top: 1em;  
-  z-index: 2; 
+  z-index: 100; 
 }
 
 .navList__route {
@@ -43,8 +43,15 @@ a:hover {
 
 .nav-logo{
   width: 70%;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Libre Caslon Display', serif;
+  font-weight: 900;
   z-index: 10;
+  background-color: #fbfbfb;
 
 }
-  
+
+
+
+
+
+

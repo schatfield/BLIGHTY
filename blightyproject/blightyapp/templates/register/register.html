@@ -1,22 +1,51 @@
 
 {% extends 'shared/base.html' %}
+{% load static %}
+{% block extrahead %}
+<link rel="stylesheet" type="text/css" href="{% static "styles/register.css" %}">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&family=Muli&family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+{% endblock %}
 
 {% block content %}
 <section class="template-container">
-<h2>Register</h2>
+<div class="parent-div">
+<div class="register-container-left">
+        <div class="page-title">Please Sign Up</div>
+        <div class="register-message"> REGISTER AN ACCOUNT TO GET THE MOST OUT OF YOUR BLIGHTY EXPERIENCE</div>
+     </div>
+
+<div class="register-container">
     <form method="post">
     {% csrf_token %}
 <!--     These values will be saved as part of a new User instance -->
-    <input type="text" placeholder="username" name="username">
-    <input type="text" placeholder="password" name="password">
-    <input type="email" placeholder="email" name="email">
-    <input type="text" placeholder="first name" name="first_name" value="userId">
-    <input type="text" placeholder="last name" name="last_name">
-<!--     This value will be saved on the new Librarian instance -->
+   <div class="reigster-form"> 
+    <div class="welcome">W E L C O M E!</div>
+    </br>
+        <input type="text" placeholder="username" name="username">
+        </br>
+        <input type="text" placeholder="password" name="password">
+        </br>
+        <input type="text" placeholder="first name" name="first_name">
+        {% comment %} value="userId" {% endcomment %}
+        </br>
+        <input type="text" placeholder="last name" name="last_name">
+        </br>
+       <input type="email" placeholder="email" name="email">
+        
+    </div>
+
+    </br>
+
+<!--     This value will be saved on the new Patron instance -->
     {% comment %} <input type="text" placeholder="favorite color" name="fave_color"> {% endcomment %}
-  
-    <button type="submit">Register</button>    
+    <div classname="button">
+   <button class="register-button" type="submit">CREATE MY ACCOUNT</button> </div>
+    
     </form>
+</div>
+</div>
 
     {% if messages %}
         <ul class="messages">

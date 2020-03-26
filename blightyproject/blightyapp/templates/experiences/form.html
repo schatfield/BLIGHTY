@@ -1,37 +1,48 @@
 
 {% extends 'shared/base.html' %}
+{% load static %}
+{% block extrahead %}
+<link rel="stylesheet" type="text/css" href="{% static "styles/experience-form.css" %}">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&family=Muli&family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+{% endblock %}
+
 
 {% block content %}
 
-{% load static %}
+
 
 <section class="template-container">
-    <h1> My Experience at {{ patron_pub.pub.name }}</h1>
+    <heading class="form-title"> My Experience at {{ patron_pub.pub.name }}</heading>
 
-    <form action="{% url 'blightyapp:experience_list' %}?next={{next_url}}" method="post">
-      {% csrf_token %}
+    <div class="form">
+      <form action="{% url 'blightyapp:experience_list' %}?next={{next_url}}" method="post">
+        {% csrf_token %}
+      
+
+            <label for="beers_tried">
+              <input id="beers" type="text" placeholder="beers enjoyed" name="beers" value="{{patron_pub.beers_tried}}">
+            </label>
+            </br>
+
+            <label for="food_ate"> </label>
+            <input id="food" type="text" placeholder="food tried" name="food" value="{{patron_pub.food_ate}}">
+
+            </br>
     
-      <fieldset>
-          <label for="beers_tried">Beers Tried: </label>
-          <input id="beers" type="text" name="beers" value="{{patron_pub.beers_tried}}">
-      </fieldset>
-      <fieldset>
-          <label for="food_ate">Food Ate: </label>
-          <input id="food" type="text" name="food" value="{{patron_pub.food_ate}}">
-      </fieldset>
-      <fieldset>
-          <label for="experience">Experience: </label>
-          <input id="Experience" type="text" name="experience" value="{{patron_pub.experience}}">
-      </fieldset>
- 
-        {% comment %} Add hidden field with patron pub id to send it to the view?{% endcomment %}
+            <label for="experience"></label>
+            <textarea rows="5" cols="60" id="Experience" style="resize: none;" type="text" placeholder="describe your experience" name="experience" value="{{patron_pub.experience}}"></textarea>
+            </br>
+    
+          {% comment %} Add hidden field with patron pub id to send it to the view?{% endcomment %}
             <input type="hidden"  id="region_id" name="region_id" value="{{ patron_pub.region_id }}">
             <input type="hidden"  id="patron_pub_id" name="patron_pub_id" value="{{ patron_pub.id }}">
             <input type="hidden"  id="context"  name="context" value="region_detail">
-
-            <input type="submit" value="Add It" />
-     
-        </form>
+            <input class="add" type="submit" value="ADD MY EXPERIENCE" />
+      
+          </form>
+        </div>
     </section>
 
 {% endblock %}

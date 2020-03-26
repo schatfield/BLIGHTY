@@ -1,17 +1,34 @@
 
 {% extends 'shared/base.html' %}
+{% load static %}
+{% block extrahead %}
+
+<link rel="stylesheet" type="text/css" href="{% static "styles/wish-list.css" %}">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&family=Muli&family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+{% endblock %}
 
 {% block content %}
 
-{% load static %}
 
 <section class="template-container">
-    <h1>My Pubs</h1>
-   <div>
+    <p class="page-title">My Pubs</p>
+        <div class="wished-flex">
+   
         {% for wished_pub in wished_pubs %}
-    <div>
-            <div><img src="{% static wished_pub.pub.image_path %}" alt="My image"></div>
-            {{ wished_pub.pub.name }}
+
+         <div class="wished-card">
+
+            <div class="image-container">
+                <img class="pub-image" src="{% static wished_pub.pub.image_path %}" alt="My image">
+            </div>
+
+            <div class="wished-info">
+        {% comment %} ----------- NAME --------------- {% endcomment %}
+            <p class="pub-name">{{ wished_pub.pub.name }}</p>
+                
+        {% comment %} ---------- FORM 1 {% endcomment %}
             <form action="{% url 'blightyapp:patron_pub_list' %}" method="POST">
             {% csrf_token %}
             {% comment %} the conditionals below are checking for a patron pub record to show things a user has already liked/visited when they go to the page so that their likes and visited shows up for the on the region details page -tracking their usage history basically and the icons will show liked/visited with CSS {% endcomment %}
@@ -36,26 +53,28 @@
             </form>
 
             <form action="{% url 'blightyapp:patron_pub_list' %}" method="POST">
-            {% csrf_token %}
-            {% if wished_pub.id is not None %}
-                <input type="hidden"  id="patron_pub_id" name="patron_pub_id" value="{{ wished_pub.id }}">                    
-            {% else %}
-                <input type="hidden"  id="patron_pub_id" name="patron_pub_id" value="">
-            {% endif %}
-                <input type="hidden" id="is_wished" name="is_wished" value="False" />
-                <input type="hidden"  id="is_visited" name="is_visited" value="True">
-                <input type="hidden"  id="pub_id" name="pub_id" value="{{ wished_pub.pub.id }}">
-                <input type="hidden"  id="region_id" name="region_id" value="{{ wished_pub.pub.region_id }}">
-                <input type="hidden"  name="context" value="wish_list">
+                {% csrf_token %}
+                {% if wished_pub.id is not None %}
+                    <input type="hidden"  id="patron_pub_id" name="patron_pub_id" value="{{ wished_pub.id }}">                    
+                {% else %}
+                    <input type="hidden"  id="patron_pub_id" name="patron_pub_id" value="">
+                {% endif %}
+                    <input type="hidden" id="is_wished" name="is_wished" value="False" />
+                    <input type="hidden"  id="is_visited" name="is_visited" value="True">
+                    <input type="hidden"  id="pub_id" name="pub_id" value="{{ wished_pub.pub.id }}">
+                    <input type="hidden"  id="region_id" name="region_id" value="{{ wished_pub.pub.region_id }}">
+                    <input type="hidden"  name="context" value="wish_list">
 
-            {% if wished_pub.is_visited%} 
-                <button type="submit"> <i class="fas fa-check-square"></i> </button>   
-             {% else %}
-                <button type="submit"> <i class="far fa-check-square"></i> </button>   
-            {% endif %} 
-            </form>            
+                {% if wished_pub.is_visited%} 
+                    <button class="check" type="submit"> <i class="fas fa-check-square"></i> </button>   
+                {% else %}
+                    <button class="check" type="submit"> <i class="far fa-check-square"></i> </button>   
+                {% endif %} 
+                </form>            
+            </div>
         </div>
-     </section>
+    {% comment %} </div> {% endcomment %}
     {% endfor %}
-
+</div>
+  </section>
 {% endblock %}

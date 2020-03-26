@@ -1,29 +1,58 @@
 {% extends 'shared/base.html' %}
-{% block content %}
 {% load static %}
+{% block extrahead %}
+
+<link rel="stylesheet" type="text/css" href="{% static "styles/experience-list.css" %}">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&family=Muli&family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
 
 <section class="template-container">
-    <h1>Experiences</h1>
+    <p class="page-title">Experiences</p>
+    <div class="experience-flex">
+
     {% for experience in all_experiences %}
-    <div>
-        <h2>{{experience.pub.name}}</h2>
-        <p>Beers Drank: {{experience.beers_tried}}</p>
-        <p>Food Ate: {{experience.food_ate}}</p>
-        <p>Experience: {{experience.experience}}</p>
-    </div>
 
-    <div>
-        <form action="{% url 'blightyapp:experience_form' experience.id %}" method="POST">
-            {% csrf_token %}
-            <input type="hidden" name="actual_method" value="DELETE">
-            <button>Delete</button>
-        </form>
+    <div class="experience-card">
 
-         <form action="{% url 'blightyapp:experience_edit_form' experience.id %}" method="GET">
-            {% csrf_token %}
-            <button>Edit</button>
-        </form>
-      </div>    
+      <div class="image-container">
+        <img class="main-image" src="{% static experience.pub.image_path %}" alt=""/>
+      </div>
+      
+      <div class="content-container">
+        <div class="top">
+
+            <h2 class="pub-name">{{experience.pub.name}}</h2>
+
+            <div class="delete-button">
+              <form action="{% url 'blightyapp:experience_form' experience.id %}" method="POST">
+                  {% csrf_token %}
+                  <input type="hidden" name="actual_method" value="DELETE">
+                  <button class="delete">D E L E T E</button>
+              </form>
+            </div>
+
+            <div class="edit-button">
+                <form action="{% url 'blightyapp:experience_edit_form' experience.id %}" method="GET">
+                    {% csrf_token %}
+                    <button class="edit">E D I T</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="bottom">
+          <p class="beers">BEERS DRANK: {{experience.beers_tried}}</p>          
+          <p class="food">FOOD ATE: {{experience.food_ate}}</p>          
+          <p class="ex">EXPERIENCE: {{experience.experience}}</p>
+        </div>
+    
+        </div> 
+      </div> 
+
     {% endfor %}
+    </div>
   </section>
 {% endblock %}

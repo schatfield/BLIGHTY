@@ -1,0 +1,96 @@
+
+.parent-div {
+    display:flex;    
+    margin-top: 100px;
+    justify-content: space-around;
+}
+
+
+.login-container-left{
+    width: 40%;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.login-container {
+    
+    height: 700px;
+    margin-right:300px;
+    padding-bottom: 100px;
+    
+}
+
+.page-title{
+    font-family: 'Libre Caslon Display', serif;
+    font-size: 50px;
+    margin-left: 0px;
+    margin-top: 250px;
+    padding-bottom: 25px;
+   
+} 
+
+.register-link{
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    color: #9c824b;
+}
+
+.welcome{
+    margin-top: 150px;
+    margin-left: 150px;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+}
+
+.form{
+    
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+
+}
+
+.login-button{
+    font-family: 'Libre Caslon Display', serif;
+    font-size: 18px;
+    width: 298px;
+    height: 45px;
+} 
+
+.button{
+    margin-left: 85px;
+}
+
+input[type="text"], input[type="password"]{
+    outline: none;
+    border: none;
+    width: 298px;
+    height: 48px;
+    margin-right: 50px;
+    font-family: 'Roboto', serif;
+    border-bottom: 1px solid black;  
+    background-color: #fbfbfb;
+}
+
+
+input[name="username"]{
+    font-size: 14px;
+}
+
+input:focus, textarea:focus,
+keygen:focus, select:focus {
+    outline-offset: 0px;
+}
+
+label[for="id_username"], label[for="id_password"] {
+    font-size: 14px;
+    padding-right: 15px;
+}
+
+
+
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill { 
+    background-color: #fff !important;
+    -webkit-box-shadow: 0 0 0px 1000px #fbfbfb inset;
+}

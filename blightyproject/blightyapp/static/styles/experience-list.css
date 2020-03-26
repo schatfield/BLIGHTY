@@ -1,0 +1,90 @@
+.page-title {
+    font-family: 'Playfair Display SC', serif;
+    padding-top:50px;
+    font-size: 50px;
+    margin-left: 0px;
+    padding-bottom: 15px;
+}
+
+.experience-card {
+    display: flex;
+    
+}
+
+.content-container {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);    
+    background-color:#e2e8e0;
+    width: 450px; 
+    height: 250px;   
+    margin-left:-35px ;
+    margin-top: 15px;
+    position: relative;    
+    z-index:1;
+}
+
+.main-image{
+   width: 400px; 
+   height: 280px;
+}
+
+.pub-name {
+    font-family: 'Libre Caslon Display', serif;
+    font-size: 25px;
+    width: 80%;
+    margin-left: 10px;  
+    margin-top: 0;
+}
+
+p { 
+    font-family: 'Roboto', sans-serif;
+    font-size: 9px;
+}
+
+.top {
+    display:flex;
+    width: 100%;
+    margin-right:-40px
+
+}
+
+
+.delete-button{
+    display: flex;
+    margin-right: 0;
+    padding-left: 20px;
+
+}
+
+.beers{
+    font-family: 'Roboto', sans-serif;  
+    margin-left: 10px;  
+}
+
+.food{
+    font-family: 'Roboto', sans-serif;
+    font-size: 9px;
+    margin-left: 10px;  
+}
+
+.ex{
+    font-family: 'Roboto', sans-serif;
+    font-size: 9px;
+    margin-left: 10px;  
+}
+
+
+.delete{
+    width: 60px;
+    height: 20px;
+    font-family: 'Roboto', sans-serif;;
+    font-size: 8px;
+
+}
+
+.edit{
+    width: 60px;
+    height: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 8px;
+    
+}

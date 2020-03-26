@@ -2,10 +2,27 @@ body {
     color: black;
 }
 
+form {
+    display: inline;
+    height: 20px;
+}
+
+p {
+    margin: 0;
+}
+
 .pub-card{
+    display: flex;
     transition: 0.3s;
     border-radius: 5px; /* 5px rounded corners */
-    width: 512px;        
+    width: 512px;  
+    flex-wrap: wrap;
+    justify-content: space-evenly;      
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
 }
 
 .template-container{
@@ -35,34 +52,32 @@ body {
     z-index:1;
 }
 
-.pub-buttons{
+.pub-title{
     display: flex;
-    margin-left: 280px;
-    margin-top: -25px;
+
 }
 
 .plus{
-   margin-top:2px;
-   background-color: #e9dfdf ;
+   /* margin-top:2px; */
+   background-color: #e9dfdf;
+   height: 20px;
    border:none;
-   outline:none;
 }
 
 .check{
     background-color: #e9dfdf ;
-    border:none;
-    outline:none;
+    border:none;    
 }
 
 .heart{
     background-color: #e9dfdf ;
     border:none;
-    outline:none;
 }
 
 
 .pub-name{
     font-family: 'Playfair Display', serif;
+    width: 80%;
     font-size: 25px;
     margin-left: 5px;
 }
@@ -85,6 +100,12 @@ body {
     font-size: 15px;
    
 } 
+
+.flex-card{
+
+    flex-wrap: wrap;
+    justify-content: space-evenly;      
+}
 
 .pub-address{
     font-family: 'Roboto', sans-serif;

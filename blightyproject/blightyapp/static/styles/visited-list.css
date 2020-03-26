@@ -1,0 +1,52 @@
+p {
+    margin: 0 0;
+}
+
+button {
+    border: none;
+}
+
+.page-title {
+    font-family: 'Playfair Display SC', serif;
+    padding-top:50px;
+    font-size: 50px;
+    margin-left: 0px;
+    padding-bottom: 15px;
+}
+
+.pub-image{
+    width:400px;
+}
+.visited-card {
+    width: 400px;
+}
+
+.visited-info {
+    display: flex;
+    justify-content: space-between;    
+    width:100%;
+    font-family: 'Playfair Display SC', serif;
+    margin: 0; 
+    border-bottom: 5px solid #e2e8e0;  
+}
+
+.pub-name {
+    width: 80%;
+   
+}
+
+.visited-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.experience-item {
+    margin-top:2px;
+ }
+ 
+ .check {
+    margin-top:2px;        
+ }
+ 
