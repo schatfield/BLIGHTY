@@ -3,6 +3,8 @@ from django.db import models
 class Region (models.Model):
 
     name = models.CharField(max_length=50)
+    description = models.CharField(max_length=2000)
+    image_path = models.CharField(max_length=255)
     
 
     class Meta:
