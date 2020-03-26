@@ -1,6 +1,7 @@
 {% extends 'shared/base.html' %}
 {% load static %}
 {% block extrahead %}
+
 <link rel="stylesheet" type="text/css" href="{% static "styles/experience-list.css" %}">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&family=Muli&family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
@@ -10,15 +11,15 @@
 {% block content %}
 
 <section class="template-container">
-    <div class="page-title">Experiences</div>
+    <p class="page-title">Experiences</p>
     <div class="experience-flex">
-    {% for experience in all_experiences %}
 
+    {% for experience in all_experiences %}
 
     <div class="experience-card">
 
       <div class="image-container">
-        <img src="{% static experience.pub.image_path %}" alt=""/>
+        <img class="main-image" src="{% static experience.pub.image_path %}" alt=""/>
       </div>
       
       <div class="content-container">

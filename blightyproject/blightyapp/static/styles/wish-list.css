@@ -2,6 +2,7 @@
 p {
     margin: 0 0;
 }
+
 button {
     border: none;
 }
@@ -19,12 +20,16 @@ button {
     width:100%;
 }
 
-.image-container{
+/* .image-container{
     width:400px;
-}
+} */
 
 .wished-card {
     width: 400px;
+}
+
+.pub-image{
+    width:400px;
 }
 
 .wished-info {
@@ -37,13 +42,17 @@ button {
 }
 
 .pub-name {
-    width: 80%;
+    width: 90%;
+}
+
+html {
+    display: inline;
 }
 
 .wished-flex{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin-top: 20px;
 }
  

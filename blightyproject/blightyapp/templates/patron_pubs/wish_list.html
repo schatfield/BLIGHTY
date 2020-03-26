@@ -2,7 +2,8 @@
 {% extends 'shared/base.html' %}
 {% load static %}
 {% block extrahead %}
-<link rel="stylesheet" type="text/css" href="{% static "styles/wished-list" %}">
+
+<link rel="stylesheet" type="text/css" href="{% static "styles/wish-list.css" %}">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&family=Muli&family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
@@ -12,7 +13,7 @@
 
 
 <section class="template-container">
-    <heading class="page-title">My Pubs</heading>
+    <p class="page-title">My Pubs</p>
         <div class="wished-flex">
    
         {% for wished_pub in wished_pubs %}
@@ -25,7 +26,8 @@
 
             <div class="wished-info">
         {% comment %} ----------- NAME --------------- {% endcomment %}
-                <p>{{ wished_pub.pub.name }}</p>
+            <p class="pub-name">{{ wished_pub.pub.name }}</p>
+                
         {% comment %} ---------- FORM 1 {% endcomment %}
             <form action="{% url 'blightyapp:patron_pub_list' %}" method="POST">
             {% csrf_token %}
@@ -64,15 +66,15 @@
                     <input type="hidden"  name="context" value="wish_list">
 
                 {% if wished_pub.is_visited%} 
-                    <button type="submit"> <i class="fas fa-check-square"></i> </button>   
+                    <button class="check" type="submit"> <i class="fas fa-check-square"></i> </button>   
                 {% else %}
-                    <button type="submit"> <i class="far fa-check-square"></i> </button>   
+                    <button class="check" type="submit"> <i class="far fa-check-square"></i> </button>   
                 {% endif %} 
                 </form>            
             </div>
         </div>
-    </div>
-</div>
+    {% comment %} </div> {% endcomment %}
     {% endfor %}
+</div>
   </section>
 {% endblock %}
