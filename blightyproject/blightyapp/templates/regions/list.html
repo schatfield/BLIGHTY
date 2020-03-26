@@ -18,6 +18,7 @@
     
     <div class="region-list-flex">
     {% for region in all_regions %}
+    
         <div classname="region-list">
              <a href="{% url 'blightyapp:region_details' region.id %}"> {{ region.name }} </a>
             

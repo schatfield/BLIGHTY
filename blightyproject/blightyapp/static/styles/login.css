@@ -14,40 +14,40 @@
 }
 
 .login-container {
-    width: 40%;
-    text-align: center;
-    margin-left: 5%;
-    margin-right: 5%;
+    
     height: 700px;
-    background-color:#e9dfdf;;
+    margin-right:300px;
+    padding-bottom: 100px;
+    
 }
 
 .page-title{
     font-family: 'Libre Caslon Display', serif;
     font-size: 50px;
     margin-left: 0px;
-    margin-top: 200px;
-    padding-bottom: 15px;
+    margin-top: 250px;
+    padding-bottom: 25px;
+   
 } 
 
 .register-link{
     font-family: 'Roboto', sans-serif;
     font-size: 11px;
     font-weight: 600;
+    color: #9c824b;
 }
 
 .welcome{
-    margin-top: 200px;
-    margin-left: 45px;
+    margin-top: 150px;
+    margin-left: 150px;
     font-family: 'Playfair Display', serif;
     font-size: 20px;
 }
 
 .form{
-    /* margin-top: 10px; */
+    
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
-    font-weight: 300;  
 
 }
 
@@ -59,7 +59,7 @@
 } 
 
 .button{
-    margin-left: 40px;
+    margin-left: 85px;
 }
 
 input[type="text"], input[type="password"]{
@@ -70,6 +70,12 @@ input[type="text"], input[type="password"]{
     margin-right: 50px;
     font-family: 'Roboto', serif;
     border-bottom: 1px solid black;  
+    background-color: #fbfbfb;
+}
+
+
+input[name="username"]{
+    font-size: 14px;
 }
 
 
@@ -78,7 +84,9 @@ label[for="id_username"], label[for="id_password"] {
     padding-right: 15px;
 }
 
+
+
 input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill { 
     background-color: #fff !important;
-    -webkit-box-shadow: 0 0 0px 1000px #e9dfdf inset;
+    -webkit-box-shadow: 0 0 0px 1000px #fbfbfb inset;
 }

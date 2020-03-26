@@ -10,9 +10,10 @@
 
 {% block content %}
 <section class="template-container">
+<div class="parent-div">
 <div class="register-container-left">
         <div class="page-title">Please Sign Up</div>
-        <div class="register-message"> Register an account and get the most out of your BLIGHTY experience</div>
+        <div class="register-message"> REGISTER AN ACCOUNT TO GET THE MOST OUT OF YOUR BLIGHTY EXPERIENCE</div>
      </div>
 
 <div class="register-container">
@@ -20,19 +21,30 @@
     {% csrf_token %}
 <!--     These values will be saved as part of a new User instance -->
    <div class="reigster-form"> 
+    <div class="welcome">W E L C O M E!</div>
+    </br>
         <input type="text" placeholder="username" name="username">
+        </br>
         <input type="text" placeholder="password" name="password">
-        <input type="email" placeholder="email" name="email">
-        <input type="text" placeholder="first name" name="first_name" value="userId">
+        </br>
+        <input type="text" placeholder="first name" name="first_name">
+        {% comment %} value="userId" {% endcomment %}
+        </br>
         <input type="text" placeholder="last name" name="last_name">
+        </br>
+       <input type="email" placeholder="email" name="email">
+        
     </div>
 
-<!--     This value will be saved on the new Librarian instance -->
+    </br>
+
+<!--     This value will be saved on the new Patron instance -->
     {% comment %} <input type="text" placeholder="favorite color" name="fave_color"> {% endcomment %}
     <div classname="button">
    <button class="register-button" type="submit">CREATE MY ACCOUNT</button> </div>
     
     </form>
+</div>
 </div>
 
     {% if messages %}
