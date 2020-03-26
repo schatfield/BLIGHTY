@@ -11,13 +11,13 @@ text {
 
 #site-nav {
   position: fixed;
-  /* background-color: #fbfbfb; */
+  background-color: #fbfbfb;
   top: 0;
   list-style-type: none;
   width: 100%;      
   display: flex;
   padding-top: 1em;  
-  z-index: 2; 
+  z-index: 100; 
 }
 
 .navList__route {
@@ -46,6 +46,7 @@ a:hover {
   font-family: 'Libre Caslon Display', serif;
   font-weight: 900;
   z-index: 10;
+  background-color: #fbfbfb;
 
 }
 

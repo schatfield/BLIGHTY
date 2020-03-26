@@ -14,7 +14,7 @@
 
 
 <section class="template-container">
-    <div class="form-title"> My Experience at {{ patron_pub.pub.name }}</div>
+    <heading class="form-title"> My Experience at {{ patron_pub.pub.name }}</heading>
 
     <div class="form">
       <form action="{% url 'blightyapp:experience_list' %}?next={{next_url}}" method="post">

@@ -78,6 +78,10 @@ input[name="username"]{
     font-size: 14px;
 }
 
+input:focus, textarea:focus,
+keygen:focus, select:focus {
+    outline-offset: 0px;
+}
 
 label[for="id_username"], label[for="id_password"] {
     font-size: 14px;
