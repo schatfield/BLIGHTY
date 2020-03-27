@@ -3,6 +3,7 @@
 {% load static %}
 {% block extrahead %}
 <link rel="stylesheet" type="text/css" href="{% static "styles/region-list.css" %}">
+
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&family=Muli&family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
@@ -19,9 +20,15 @@
     <div class="region-list-flex">
     {% for region in all_regions %}
     
-        <div classname="region-list">
-             <a href="{% url 'blightyapp:region_details' region.id %}"> {{ region.name }} </a>
-            
+
+        {% comment %} <div class="image-div">
+                <img class="main-image" src="{% static pub.image_path %}" alt="">
+            </div> {% endcomment %}
+
+        <div class="region-list">
+            <a href="{% url 'blightyapp:region_details' region.id %}"> 
+                <img class="region-image" src="{% static region.image_path %}" alt="">
+            </a>            
         </div>
     {% endfor %}
     </div>

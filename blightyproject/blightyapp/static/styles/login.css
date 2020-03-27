@@ -9,17 +9,21 @@
 .login-container-left{
     width: 40%;
     text-align: center;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 10%;
+    /* margin-right: 5%; */
+    
 }
 
 .login-container {
-    
-    height: 700px;
-    margin-right:300px;
+    height: 600px;
+    margin-top:0;
+    width: 60%;
+    margin-right: 10%;
     padding-bottom: 100px;
+    background-image: url('../images/login.png');
     
 }
+
 
 .page-title{
     font-family: 'Libre Caslon Display', serif;
@@ -39,7 +43,7 @@
 
 .welcome{
     margin-top: 150px;
-    margin-left: 150px;
+    margin-left: 170px;
     font-family: 'Playfair Display', serif;
     font-size: 20px;
 }
@@ -48,11 +52,14 @@
     
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
+}
 
+.login-form {
+    margin-left: 160px;
 }
 
 .login-button{
-    font-family: 'Libre Caslon Display', serif;
+    font-family: 'Playfair Display SC', serif;
     font-size: 18px;
     width: 298px;
     height: 45px;

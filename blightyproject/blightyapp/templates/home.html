@@ -1,13 +1,22 @@
 {% extends 'shared/base.html' %}
-{% block content %}
 {% load static %}
+{% block extrahead %}
+
+<link rel="stylesheet" type="text/css" href="{% static "styles/home.css" %}">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&family=Muli&family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
 
 
 <section class="template-container">
 
-<h1> BLIGHTY</h1>
-    <h2>A Modern Guide To A Historic Institution: The Pub</h2>
-    <h3>Welcome to BLIGHTY</h3>
+<div class="hero">
+<img class="image" src="{% static "images/hero.png" %}" alt="My image"></img>
+</div>
+    
 </section>
 
 {% endblock %}

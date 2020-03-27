@@ -3,43 +3,54 @@
     "model": "blightyapp.region",
     "pk": 1,
     "fields": {
-      "name": "Southeast"
+      "name": "Southeast",
+      "description":"",
+      "image_path":"images/southeast.png"
     }
   },
   {
     "model": "blightyapp.region",
     "pk": 2,
     "fields": {
-      "name": "Southwest"
+      "name": "Southwest",
+      "description":"",
+      "image_path":"images/southwest.png"
     }
   },
   {
     "model": "blightyapp.region",
     "pk": 3,
     "fields": {
-      "name": "The Midlands"
+      "name": "The Midlands",
+      "description":"",
+      "image_path":"images/mid.png"
     }
   },
   {
     "model": "blightyapp.region",
     "pk": 4,
     "fields": {
-      "name": "The East"
+      "name": "The East",
+      "description":"",
+      "image_path":"images/east.png"
     }
   },
   {
     "model": "blightyapp.region",
     "pk": 5,
     "fields": {
-      "name": "Northeast"
+      "name": "Northeast",
+      "description":"",
+      "image_path":"images/northeast.png"
     }
   },
-
   {
     "model": "blightyapp.region",
     "pk": 6,
     "fields": {
-      "name": "Northwest"
+      "name": "Northwest",
+      "description":"",
+      "image_path":"images/northwest.png"
     }
   },
   {
