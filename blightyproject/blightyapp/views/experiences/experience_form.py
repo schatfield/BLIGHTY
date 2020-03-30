@@ -61,6 +61,7 @@ def experience_edit_form(request, patron_pub_id):
 
     if request.method == 'GET':
         patron_pub = get_patron_pub(patron_pub_id)     
+       
         print(patron_pub)
 
         template = 'experiences/form.html'

@@ -32,7 +32,7 @@
             </p>
     
             <label for="experience"></label>
-            <textarea rows="20" cols="60" id="Experience" style="resize: none;" type="text" placeholder="describe your experience" name="experience" value="{{patron_pub.experience}}"></textarea>
+            <textarea rows="20" cols="60" id="Experience" style="resize: none;" type="text" placeholder="describe your experience" name="experience">{{patron_pub.experience}}</textarea>
             </p>
     
           {% comment %} Add hidden field with patron pub id to send it to the view?{% endcomment %}
@@ -40,7 +40,12 @@
             <input type="hidden"  id="patron_pub_id" name="patron_pub_id" value="{{ patron_pub.id }}">
             <input type="hidden"  id="context"  name="context" value="region_detail">
             
-            <input class="add" type="submit" value="ADD MY EXPERIENCE" />
+            
+            {% if patron_pub.has_experience %}
+                <input class="add" type="submit" value="EDIT EXPERIENCE" />
+            {% else %}
+                <input class="add" type="submit" value="ADD MY EXPERIENCE" />
+            {% endif %}
       
           </form>
         </div>

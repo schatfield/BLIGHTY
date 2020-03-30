@@ -22,6 +22,7 @@ p {
 
 .card-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
@@ -29,48 +30,67 @@ p {
     padding-top: 75px;
 }  
 
-.region-name{
+.region-name {
     font-family: 'Playfair Display SC', serif;
     font-size: 50px;
     margin-left: 0px;
     padding-bottom: 15px;
 }
 
+.region-description{
+    
+    font-family: 'Libre Caslon Display', serif;
+    font-size: 16px;
+    padding-bottom: 40px;
+    margin-right: 300px;
+    text-align: justify;
+}
+
 .main-image{
     height: 400px;
-    width: 515px;     
-    
+    width: 515px;        
 }
+
+.image-div {
+    height: 400px;
+    width: 515px;
+}
+
 .pub-div{    
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     display: flex;
-    background-color: #e9dfdf;
+    background-color: #ebeae8;
     width: 98%;
-    margin-left:7px ;
+    height: 390px;
+    margin-left:2px ;
     position: relative;
-    top: -30px;        
+    top: -35px;        
     z-index:1;
+   
 }
 
-.pub-title{
-    display: flex;
+.pub-title {
+    
+    width:150%
 
 }
+
+button:focus { outline: none; }
 
 .plus{
    /* margin-top:2px; */
-   background-color: #e9dfdf;
+   background-color: #ebeae8;
    height: 20px;
    border:none;
 }
 
 .check{
-    background-color: #e9dfdf ;
+    background-color: #ebeae8 ;
     border:none;    
 }
 
 .heart{
-    background-color: #e9dfdf ;
+    background-color:#ebeae8 ;
     border:none;
 }
 
@@ -84,14 +104,14 @@ p {
 
 .pub-desc{
     font-family: 'Roboto', sans-serif;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 200;
     text-align: justify;
     margin-left: 5px;
     /* margin-right:200px; */
 }
 
- .pub-details{
+.pub-details {
     font-family: 'Roboto', sans-serif;
     /* margin-left: 50px; */
     margin-top: 100px;
@@ -107,12 +127,10 @@ p {
     justify-content: space-evenly;      
 }
 
-.pub-address{
+.pub-address {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    font-weight: 900;
-  
-   
+    font-weight: 900;   
 }
 
 .pub-web{
@@ -125,14 +143,11 @@ p {
 .address{
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
-   
+    text-align: left;
     
 }
 
-.web{
+.web {
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
-    
-   
-    
 }

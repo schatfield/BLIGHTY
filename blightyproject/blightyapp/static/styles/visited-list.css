@@ -6,6 +6,8 @@ button {
     border: none;
 }
 
+button:focus { outline: none; }
+
 .page-title {
     font-family: 'Playfair Display SC', serif;
     margin-top:50px;
@@ -16,14 +18,22 @@ button {
 
 .pub-image{
     width:400px;
+    height: 300px;
 }
 .visited-card {
-    width: 400px;
+    width: 400px;   
+    margin-bottom: 35px;
+
+}
+
+.image-container {
+    width: 400px;    
 }
 
 .visited-info {
     display: flex;
-    justify-content: space-between;    
+    justify-content: space-between;   
+
     width:100%;
     font-family: 'Playfair Display SC', serif;
     margin: 0; 

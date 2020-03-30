@@ -4,7 +4,7 @@
     "pk": 1,
     "fields": {
       "name": "Southeast",
-      "description":"",
+      "description":"South East England is renowned for its beautiful gardens and miles of stunning coastline. Rich in cultural attractions, the region is easily accessible from London, and is also home to miles of gentle rolling countryside, two National Parks, and some of Britain’s driest weather! Step back in time in medieval villages and quintessential coastal towns, explore history in armour filled museums and palatial architectural gems. This exquisite region has so much to offer and is home to a charming little town called London...Counties include Berkshire, Buckinghamshire, East Sussex, Hampshire, the Isle of Wight, Kent, Oxfordshire, Surrey and West Sussex.",
       "image_path":"images/southeast.png"
     }
   },
@@ -13,7 +13,7 @@
     "pk": 2,
     "fields": {
       "name": "Southwest",
-      "description":"",
+      "description":"Over the coasts and valleys in southwest England lie the mysterious mists of Camelot: the craggy peaks of Cornwall, the fertile farmlands of Somerset, the drizzly charming Dorset villages, the grassy, gusty Devon moors. The so-called 'West Country' is the legendary region of Arthurian knights and cuckolded kings, Moorish pirates and Mayflower pilgrims, Stone Age sacrifices and solstice awakenings. It also has more sunshine and tends to be warmer than the rest of England, but that may be a myth too. One thing there's no myth surrounding in these parts in though, is the real country pub. Counties include: Bristol, Cornwall, Dorset, Devon, Gloucestershire, Somerset, and Wiltshire, the Isles of Scilly.",
       "image_path":"images/southwest.png"
     }
   },
@@ -58,9 +58,9 @@
     "pk": 1,
     "fields": {
       "name": "The Five Alls",
-      "description": "Tucked in the quaint Cotswolds village of Filkins, The Five Alls ofers an exciting blend of traditional English fare with an Italian twist. The honeystone inn covered in climbing plants exudes country appeal – this is a theme that continues inside, with logs piled high, charming fagstone foors and a cosy freplace to gather around. Seasonal cocktails, The Five Alls' house ale and an extensive wine list ofer a tipple for every taste, while a menu infuenced by the town's artisan producers promises a foodie treat, combined with the head chef's Italian connections. Upstairs, there are four en-suite rooms above the inn and a further fve bespoke bedrooms reached from the picturesque garden.",
-      "address": "Filkins, Lechlade GL7 3JQ",
-      "website": "thefiveallsfilkins.co.uk",
+      "description": "| FILKINS | GLOUCESTERSHIRE | Tucked in the quaint Cotswolds village of Filkins, The Five Alls ofers an exciting blend of traditional English fare with an Italian twist. The honeystone inn covered in climbing plants exudes country appeal – this is a theme that continues inside, with logs piled high, charming fagstone foors and a cosy freplace to gather around. Seasonal cocktails, The Five Alls' house ale and an extensive wine list ofer a tipple for every taste, while a menu infuenced by the town's artisan producers promises a foodie treat, combined with the head chef's Italian connections. Upstairs, there are four en-suite rooms above the inn and a further fve bespoke bedrooms reached from the picturesque garden.",
+      "address": "The Five Alls, Filkins, Lechlade GL7 3JQ",
+      "website": "http://thefiveallsfilkins.co.uk",
       "image_path": "images/five_alls.jpg",
       "region_id": 2
     }
@@ -69,11 +69,11 @@
     "model": "blightyapp.pub",
     "pk": 2,
     "fields": {
-      "name": "The Five Alls",
-      "description": "Tucked in the quaint Cotswolds village of Filkins, The Five Alls ofers an exciting blend of traditional English fare with an Italian twist. The honeystone inn covered in climbing plants exudes country appeal – this is a theme that continues inside, with logs piled high, charming fagstone foors and a cosy freplace to gather around. Seasonal cocktails, The Five Alls' house ale and an extensive wine list ofer a tipple for every taste, while a menu infuenced by the town's artisan producers promises a foodie treat, combined with the head chef's Italian connections. Upstairs, there are four en-suite rooms above the inn and a further fve bespoke bedrooms reached from the picturesque garden.",
-      "address": "Filkins, Lechlade GL7 3JQ",
-      "website": "thefiveallsfilkins.co.uk",
-      "image_path": "images/five_alls.jpg",
+      "name": "The Pandora Inn",
+      "description": "| FALMOUTH | CORNWALL| Few pubs can claim to serve fsh fresh from the boat, but Falmouth’s 13th-century Pandora Inn does. But that’s not the only thing that makes this inn special. Home to a cosy, character bar and restaurant, you can hunker down on a blustery day and enjoy food by the fre. When the sun shines, the pub’s foating pontoon becomes the star of the show with meals served on the water. The experience is relaxed, with cofee and cake kicking of proceedings in the morning, followed by a series of locally sourced daily specials and traditional coastal dishes. St Austell’s Brewery ales, Cornish Orchards’ cider and Tarquin’s local gin stock the bar with local drinks.",
+      "address": "The Pandora Inn, Restronguet Creek, Mylor Bridge, Falmouth TR11 5ST",
+      "website": "http://www.pandorainn.com/",
+      "image_path": "images/pandora-inn.jpg",
       "region_id": 2
     }
   },
@@ -81,14 +81,199 @@
     "model": "blightyapp.pub",
     "pk": 3,
     "fields": {
-      "name": "The Five Alls",
-      "description": "Tucked in the quaint Cotswolds village of Filkins, The Five Alls ofers an exciting blend of traditional English fare with an Italian twist. The honeystone inn covered in climbing plants exudes country appeal – this is a theme that continues inside, with logs piled high, charming fagstone foors and a cosy freplace to gather around. Seasonal cocktails, The Five Alls' house ale and an extensive wine list ofer a tipple for every taste, while a menu infuenced by the town's artisan producers promises a foodie treat, combined with the head chef's Italian connections. Upstairs, there are four en-suite rooms above the inn and a further fve bespoke bedrooms reached from the picturesque garden.",
-      "address": "Filkins, Lechlade GL7 3JQ",
-      "website": "thefiveallsfilkins.co.uk",
-      "image_path": "image.png",
-      "region_id": 4
+      "name": "The Gloucester Old Spot",
+      "description": "| CHELTENHAM | GLOUCESTERSHIRE | A testament to their commitment to serve the local village and neighbouring towns well, The Gloucester Old Spot is among the rare breed of pubs to serve food seven days a week. The bar is cosy and rustic and the restaurant a real treat. Enjoy seasonal and locally sourced food from comfy country furniture, while the fickering log burner and atmospheric lighting give the exposed brick walls a sense of theatre. Local ciders and hand-pulled ales keep the bar well supported, with drinks changing frequently. The historic towns of Tewkesbury and Cheltenham are also conveniently located nearby. ",
+      "address": "Tewkesbury Rd, Piffs Elm, Cheltenham GL51 9SY",
+      "website": "https://thegloucesteroldspot.co.uk/",
+      "image_path": "images/gloucester-old-spot.jpg",
+      "region_id": 2
     }
   },
+  {
+    "model": "blightyapp.pub",
+    "pk": 4,
+    "fields": {
+      "name": "The Gurnard's Head",
+      "description": "| ST. IVES | CORNWALL | A landmark pub almost at the edge of England, the Gurnard’s Head is your last stop for a pint and an open free before the Atlantic Ocean. Between St Just and Zennor, this is genuine Cornwall. Wild, mysterious and beautiful, the Gurnard’s Head is an inn that transports you back to when travel was that little bit slower. With Excellent dining room and comfortable beds, the Gurnard's Head is both a welcome stop-ff and a destination within itself. The food is simple, fresh, local wherever possible and of exceptional quality. As such, this pub regulalry features in national pub guides and has a loyal following near and far.",
+      "address": " Nr Zennor, Saint Ives, Penzance TR26 3DE, United Kingdom",
+      "website": "http://www.gurnardshead.co.uk/",
+      "image_path": "images/gurnards.png",
+      "region_id": 2
+    }
+  },
+  {
+    "model": "blightyapp.pub",
+    "pk": 5,
+    "fields": {
+      "name": "The Tinner's Arms",
+      "description": "| ZENNOR | CORNWALL | The Tinners Arms dates back to the 13th century and has been at the heart of village life in Zennor for over 700 years. With low ceilings, stone floors and seaward terrace it exudes charm and character from every nook and cranny just as you would expect. It is a pub for all seasons; an open fire, stone floors and low ceilings make for a cosy bar even when outside a storm is blowing of the Atlantic. In the summer the beer garden becomes a Mecca for those walking the nearby south west coastal path toward St Ives. Wear hiking boots - or take a beautiful, short drive around the area. Today's visitors can count on a warm welcome, real ale, fresh fish from the Atlantic, and Cornish cheeses. Topped off with a good variety of spirits, the Tinners is will worth a visit. ",
+      "address": "Zennor, St Ives TR26 3BY, United Kingdom",
+      "website": "www.tinnersarms.com",
+      "image_path": "images/tinners.jpg",
+      "region_id": 2
+    }
+  },
+  {
+    "model": "blightyapp.pub",
+    "pk": 6,
+    "fields": {
+      "name": "The Village Pub",
+      "description": "| BARNSLEY | GLOUCESTERSHIRE | At The Village Pub you can trundle around in your wellies then settle down to a more luxurious side of pub life. Tuck into quail scotch eggs, Butts Farm beef in ale pie, huge fish cakes and home-made ice cream. Almost every ingredient on the menu includes the producer's name, and dishes change daily according to what is in season. There are flagstone floors, exposed stone walls, polished wood, and animal heads on the walls. Dried wheatsheafs decorate the bar and the decor adheres to the compulsory Cotswolds palette of moss greens and muted greys, both downstairs and up in the six bedrooms on offer. Staff are jolly and helpful and have maps on hand for long walks and picnics. This village pub is everything one could hope for.",
+      "address": "The Village Pub, Barnsley, Gloucestershire, England",
+      "website": "http://thevillagepub.co.uk ",
+      "image_path": "images/village-pub.jpeg",
+      "region_id": 2
+    }
+  },
+
+  {
+    "model": "blightyapp.pub",
+    "pk": 7,
+    "fields": {
+      "name": "The Lamb At Hindon",
+      "description": "| HINDON | WILTSHIRE | A 12th century coaching inn in the idyllic setting  of postcard ready village Hindon. With it’s flagstone flooring, old oak beams and roaring fireplaces, it’s the perfect place for a bite to eat to break up a long journey through the West Country, a cycle stop to refuel and soak up the sunshine on our terrace garden, or a weekend getaway to relax and recharge. Intimate English village Inn full of charm and history - an institution for 800 years. Renovated, elegant rooms are cosy and plush. Guests are welcomed by roaring fires, hearty meals, and beautiful surroundings. A country escape or a stopover en route further West.",
+      "address": "High Street, Hindon, Salisbury, Wiltshire, SP3 6DP",
+      "website": "https://www.lambhindon.co.uk/",
+      "image_path": "images/lamb.jpg",
+      "region_id": 2
+    }
+  },
+  {
+    "model": "blightyapp.pub",
+    "pk": 8,
+    "fields": {
+      "name": "The Old Swan",
+      "description": "| MINSTER LOVELL | OXFORDSHIRE | The Old Swan & Minster Mill is an exceptional, quintessential country inn and boutique hotel in the heart of Oxfordshire. Beamed celings, roaring log fires, and rugged flagstone floors feature next to luxuriously classic interiors. The outdoor terrace and picturesque gardens are a treat during the summer months. Expect fresh local, flavoursome ingredients and hearty housemade dishes; from a pie and pint by the fireside in the colder months, or a salad on the terracein the summer. The menu is seasonal and the foos is simple. The Garden Spa offers hotel guests a tranquil and indulgent haven in the heart of this pub's beautiful grounds.",
+      "address": "Old Swan, Minster Lovell, Oxfordshire, Cotswolds, OX29 0RN",
+      "website": "https://www.oldswan.co.uk/",
+      "image_path": "images/swan.jpeg",
+      "region_id": 2
+    }
+  },
+  {
+    "model": "blightyapp.pub",
+    "pk": 9,
+    "fields": {
+      "name": "Nobody Inn",
+      "description": "| DODDISCOMBSLEIGH | DEVON | Brave the twisty-turny lanes to get to Doddiscombsleigh's only pub, the Nobody Inn. The 16th-century building is everything you would expect from a country pub: imposing fireplaces, oak beams, snuggly corners and then some. The bar is extremely well stocked, selling more than 300 types of whisky, the most expensive being the 1938 Glenlivet at £97 a tot, as well as an eponymous beer brewed in Branscombe especially for the inn. Food varies from delicious pub grub at lunch to game and fish in the evening, all with the emphasis on keeping producer-to-plate miles as low as possible. If you have even a smidgen of space left at the end of supper, indulge in the cheese board, a choice of six or nine of the 15 local cheeses, including Sharpham brie, Ticklemore goats' cheese and Devon Blue. There are also five bedrooms upstairs if you want to extend your country escape for a little longer.",
+      "address": "Nobody Inn, Doddiscombsleigh, near Exeter, Devon EX6 7PS  ",
+      "website": "https://nobodyinn.co.uk",
+      "image_path": "images/nobody.jpeg",
+      "region_id": 2
+    }
+  },
+  {
+    "model": "blightyapp.pub",
+    "pk": 1,
+    "fields": {
+      "name": "The Mermaid Inn",
+      "description": "| SUSSEX | RYE | The Mermaid Inn is situated in the beautiful medieval town of Rye. Originally a fishing town and then part of Normandy, this ancient Cinque Port town is steeped in history. Found on a fantastic cobbled street, the Inn has maintained the essence of true English charm for over 800 years and still has original features including a cellar dating back to 1156. The whole inn boasts huge freplaces, sloping ceilings and creaking floorboards, stories of smugglers, secret passageways and a huge list of famous visitors. Ghosts are rumoured to roam the pub and thirty-one bedrooms. Request a ‘ghost-free’ room when booking (if you prefer).",
+      "address": "The Mermaid Inn, Mermaid Street, Rye TN31 7EY",
+      "website": "https://www.mermaidinn.com/",
+      "image_path": "images/mermaid.jpg",
+      "region_id": 1
+    }
+  },
+  {
+    "model": "blightyapp.pub",
+    "pk": 2,
+    "fields": {
+      "name": "The Three Chimneys Freehouse",
+      "description": "| KENT | BIDDENDEN | The Three Chimneys is an award-winning, independent country pub in Biddenden. Exceptional scenery surrounds the building, which dates back to 1420, and being steeped in local history is everything one would expect from a traditional Kentish pub. Visitors are greeted with dark oak beams, roaring fires, and five separate dining areas strewn with aged hops for which the county of Kent has long been known. Craig Smith, who packed in his City job to take over the pub in 1999 serves Welsh Rarebit, Haddock Fishcakes and deep fried brie. There are five luxury bedrooms available but oddly boasts only two chimneys. An ideal refreshment stop-of if you are visiting nearby Sissinghurst Castle or Scotney Castle. Dogs are welcome.",
+      "address": "Three Chimneys, Hareplain Road, Biddenden TN27 8LW",
+      "website": "http://thethreechimneys.co.uk/",
+      "image_path": "images/chimneys.jpg",
+      "region_id": 1
+    }
+  },
+  {
+    "model": "blightyapp.pub",
+    "pk": 3,
+    "fields": {
+      "name": "The Old Neptune",
+      "description": "| KENT | WHITSTABLE | The Old Neptune, known locally as Neppy, is a cosy, seaside boozer and the subject of many a photo of Whitstable. The pub is located directly on the seafront which is an idyllic spot to spend an hour or two on a sunny afternoon. Its close position to the centre of the town makes it walkable from all of the popular eateries and boutiques. They have a good selection of local ales and not so local lagers, as well as standard pub grub. The pebble beach on which it sits is family friendly and ofers a relaxed environment. They host live music events and are also dog-friendly.",
+      "address": "The Old Neptune, Marine Terrace, Whitstable CT5 1EJ",
+      "website": "http://www.thepubonthebeach.co.uk/",
+      "image_path": "images/neptune.jpeg",
+      "region_id": 1
+    }
+  },
+  {
+    "model": "blightyapp.pub",
+    "pk": 4,
+    "fields": {
+      "name": "The Hind's Head",
+      "description": "| BRAY | BERKSHIRE | Established as a hunting lodge and coaching inn in the 1400s, The Hind’s Head in Bray is a traditional pub by Heston Blumenthal, infused with the innovative and creative ethos he applies to food and for which he is renowned. The menu refects the establishment’s British heritage. With an interior of soft blues, stained glass and oxblood leather banquettes set against original beams, dark wood fooring and inglenook freplaces, this Michelin-starred restaurant ofers astounding culinary genius in the relaxed setting of a traditional pub environment in one of the most idyllic riverside village locations of Bray.",
+      "address": "High Street, Bray, Berkshire SL6 2AB ",
+      "website": " https://hindsheadbray.com/",
+      "image_path": "images/hinds.jpg",
+      "region_id": 1
+    }
+  },
+  {
+    "model": "blightyapp.pub",
+    "pk": 5,
+    "fields": {
+      "name": "The Yew Tree",
+      "description": "| HIGHCLERE | HAMPSHIRE | With interiors that feel like a contemporary hunting lodge, this stylish Hampshire pub has become somewhat of a destination thanks to its AA Rosette-winning menu and proximity to Highclere Castle. The Yew Tree dates back to the 17th century and, as such, ofers an enchanting blend of old and new. A contemporary copper bar refects the glow of the old freplaces – an inviting place to pop into for a pint. For sunnier days, there’s also an alfresco bar in the garden. Locally caught fsh and game take centre stage on the menu and there are eight cosy bedrooms featuring William Morris wallpaper to tempt you.",
+      "address": "Hollington Cross andover Rd, Highclere RG20 9SE ",
+      "website": "http://www.the-yewtree.org.uk/",
+      "image_path": "images/hinds.jpg",
+      "region_id": 1
+    }
+  },
+  {
+    "model": "blightyapp.pub",
+    "pk": 6,
+    "fields": {
+      "name": "The Fox Goes Free",
+      "description": "| SUSSEX | CHARLTON | SUSSEX | The Fox Goes Free is an alluring country pub in the quaint village of Charlton, West Sussex. The pub is 400 years old & full of oak beams, fint walls and open freplaces. In warmer days, a pleasant afternoon can be spent in their large country garden overlooking the South Downs and nearby Goodwood Estate. This listed building is surrounded by stunning, countryside walks. Wherever possible, their cuisine is locally sourced, home-made and includes favourites such as calamari and chorizo, fsh pie and rib eye steak.",
+      "address": "Charlton Road, Charlton PO18 0HU",
+      "website": "https://www.thefoxgoesfree.com/",
+      "image_path": "images/hinds.jpg",
+      "region_id": 1
+    }
+  },
+  {
+    "model": "blightyapp.pub",
+    "pk": 7,
+    "fields": {
+      "name": "The Fox Goes Free",
+      "description": "| CHARLTON | SUSSEX | The Fox Goes Free is an alluring country pub in the quaint village of Charlton, West Sussex. The pub is 400 years old & full of oak beams, fint walls and open freplaces. In warmer days, a pleasant afternoon can be spent in their large country garden overlooking the South Downs and nearby Goodwood Estate. This listed building is surrounded by stunning, countryside walks. Wherever possible, their cuisine is locally sourced, home-made and includes favourites such as calamari and chorizo, fsh pie and rib eye steak.",
+      "address": "Charlton Road, Charlton PO18 0HU",
+      "website": "https://www.thefoxgoesfree.com/",
+      "image_path": "images/fox.jpg",
+      "region_id": 1
+    }
+  },
+  {
+    "model": "blightyapp.pub",
+    "pk": 8,
+    "fields": {
+      "name": "Fisherman's Cottage",
+      "description": "ISLE OF WIGHT | SHANKLIN | If you fancy food by the sea, the Isle of White’s Fisherman’s Cottage will tick all your boxes with its seafront location and thatched pub charm. You’ll count boats and breakers for neighbours as you enjoy a pint at Shanklin’s oldest pub, built in 1817. It’s located close to Shanklin Chine, a breath-taking gorge that is an island must-see. The water also inspires the menu, with seasonal fsh, Bembridge crab and lobster and an epic fsh and chips taking pride of place alongside traditional meat dishes. Catch the sun on the patio or hunker down in the dining room – this pub is a gem whatever the weather.",
+      "address": "Shanklin Esplanade, Shanklin, Isle of Whight PO37 6BN",
+      "website": "https://fishermanscottageshanklin.co.uk/",
+      "image_path": "images/fisherman.jpeg",
+      "region_id": 1
+    }
+  },
+  {
+    "model": "blightyapp.pub",
+    "pk": 9,
+    "fields": {
+      "name": "Sir Charles Napier",
+      "description": "| OXON | OXFORDSHIRE | The beautiful, 18th-century fint embellished Sir Charles Napier Inn sits in a beautiful spot in the Chilterns amongst scenic English gardens. With two roaring wood fres crackling away, the food here is exceptional and the views are mesmerising. The Inn has earned its reputable status over the decades it has been established. The Sunday roasts here are legendary and ingredients are based on their seasonal availability. Inside, the atmosphere is cosy and leans towards formal in the dining area, which is carpeted and resembles a country house dining room. People travel from far and wide to experience Sir Charles Napier Inn and have done for years.",
+      "address": "Spriggs Alley, Chinnor, Oxon OX39 4BX",
+      "website": "http://www.sircharlesnapier.co.uk/",
+      "image_path": "images/hinds.jpg",
+      "region_id": 1
+    }
+  },
+
+
+
+
   {
     "model": "blightyapp.patronpub",
     "pk": 1,

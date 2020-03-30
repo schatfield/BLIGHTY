@@ -7,6 +7,8 @@ button {
     border: none;
 }
 
+button:focus { outline: none; }
+
 .page-title {
     font-family: 'Playfair Display SC', serif;
     padding-top:50px;
@@ -26,10 +28,12 @@ button {
 
 .wished-card {
     width: 400px;
+    margin-bottom: 35px;;
 }
 
 .pub-image{
     width:400px;
+    height: 300px;
 }
 
 .wished-info {
