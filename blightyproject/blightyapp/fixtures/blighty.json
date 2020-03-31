@@ -22,7 +22,7 @@
     "pk": 3,
     "fields": {
       "name": "The Midlands",
-      "description":"",
+      "description":"The Midlands, formally known as The Heart of England, is a region rich in history and unspoiled countryside. Discover the region that gave birth to Shakespeare, the Industrial Revolution and the greatest hoard of Anglo-Saxon gold and silver metalwork ever found. From hiking in the beautiful Peak District to crossing the world's first Iron Bridge, there's no shortage of things to do- or pubs to visit. In the Midlands you'll be simply spoiled for choice when it comes to finding a cosy pub to have a pint and while away the hours. Counties include: Derbyshire, Herefordshire, Leicestershire, Lincolnshire, Northamptonshire, Nottinghamshire, Rutland, Shropshire, Staffordshire, Warwickshire, Worcestershire.",
       "image_path":"images/mid.png"
     }
   },
@@ -31,7 +31,7 @@
     "pk": 4,
     "fields": {
       "name": "The East",
-      "description":"",
+      "description":"Eastern England's greatest treasure is the glorious variety of its landscapes. From the quintessentially English county of Suffolk to the seaside county of Norkfolk, down to the wild countryside of Essex and the lush, marshy fenland, cathedral towns, and medieval markets of Cambridgeshire- this is the East. Travel through England’s history with some of the country’s best preserved Roman remains, Normal motte-and-bailey castles, Tudor keeps, and you guessed it- pubs! Counties include: Bedfordshire, Cambridgeshire, Essex, Hertfordshire, Norfolk and Suffolk.",
       "image_path":"images/east.png"
     }
   },
@@ -40,7 +40,7 @@
     "pk": 5,
     "fields": {
       "name": "Northeast",
-      "description":"",
+      "description":"From the Scottish borders to the counties of Yorkshire, North East England is a region often overlooked by tourists and natives from other parts of Great Britain. To those that know the North East, there is a wealth of natural beauty surprisingly unspoiled by the large number of visitors the area attracts. It's a region of contrast. From the wild beauty of the Northumberland National Park to the modern life of Newcastle, the new, the old and the disused all reside in stark relief. The real beauty of North East England is its secret. So few know what this area really has to offer- including an array of off the beaten path pubs in this wild setting. Counties include: Northumberland, County Durham, Tyne and Wear, Yorkshire.",
       "image_path":"images/northeast.png"
     }
   },
@@ -49,7 +49,7 @@
     "pk": 6,
     "fields": {
       "name": "Northwest",
-      "description":"",
+      "description":"Counties include: of Cheshire, Cumbria, Greater Manchester, Lancashire and Merseyside.",
       "image_path":"images/northwest.png"
     }
   },
@@ -164,10 +164,10 @@
   },
   {
     "model": "blightyapp.pub",
-    "pk": 1,
+    "pk": 10,
     "fields": {
       "name": "The Mermaid Inn",
-      "description": "| SUSSEX | RYE | The Mermaid Inn is situated in the beautiful medieval town of Rye. Originally a fishing town and then part of Normandy, this ancient Cinque Port town is steeped in history. Found on a fantastic cobbled street, the Inn has maintained the essence of true English charm for over 800 years and still has original features including a cellar dating back to 1156. The whole inn boasts huge freplaces, sloping ceilings and creaking floorboards, stories of smugglers, secret passageways and a huge list of famous visitors. Ghosts are rumoured to roam the pub and thirty-one bedrooms. Request a ‘ghost-free’ room when booking (if you prefer).",
+      "description": "| RYE | SUSSEX | The Mermaid Inn is situated in the beautiful medieval town of Rye. Originally a fishing town and then part of Normandy, this ancient Cinque Port town is steeped in history. Found on a fantastic cobbled street, the Inn has maintained the essence of true English charm for over 800 years and still has original features including a cellar dating back to 1156. The whole inn boasts huge freplaces, sloping ceilings and creaking floorboards, stories of smugglers, secret passageways and a huge list of famous visitors. Ghosts are rumoured to roam the pub and thirty-one bedrooms. Request a ‘ghost-free’ room when booking (if you prefer).",
       "address": "The Mermaid Inn, Mermaid Street, Rye TN31 7EY",
       "website": "https://www.mermaidinn.com/",
       "image_path": "images/mermaid.jpg",
@@ -176,10 +176,10 @@
   },
   {
     "model": "blightyapp.pub",
-    "pk": 2,
+    "pk": 11,
     "fields": {
       "name": "The Three Chimneys Freehouse",
-      "description": "| KENT | BIDDENDEN | The Three Chimneys is an award-winning, independent country pub in Biddenden. Exceptional scenery surrounds the building, which dates back to 1420, and being steeped in local history is everything one would expect from a traditional Kentish pub. Visitors are greeted with dark oak beams, roaring fires, and five separate dining areas strewn with aged hops for which the county of Kent has long been known. Craig Smith, who packed in his City job to take over the pub in 1999 serves Welsh Rarebit, Haddock Fishcakes and deep fried brie. There are five luxury bedrooms available but oddly boasts only two chimneys. An ideal refreshment stop-of if you are visiting nearby Sissinghurst Castle or Scotney Castle. Dogs are welcome.",
+      "description": "| BIDDENDEN | KENT | The Three Chimneys is an award-winning, independent country pub in Biddenden. Exceptional scenery surrounds the building, which dates back to 1420, and being steeped in local history is everything one would expect from a traditional Kentish pub. Visitors are greeted with dark oak beams, roaring fires, and five separate dining areas strewn with aged hops for which the county of Kent has long been known. Craig Smith, who packed in his City job to take over the pub in 1999 serves Welsh Rarebit, Haddock Fishcakes and deep fried brie. There are five luxury bedrooms available but oddly boasts only two chimneys. An ideal refreshment stop-of if you are visiting nearby Sissinghurst Castle or Scotney Castle. Dogs are welcome.",
       "address": "Three Chimneys, Hareplain Road, Biddenden TN27 8LW",
       "website": "http://thethreechimneys.co.uk/",
       "image_path": "images/chimneys.jpg",
@@ -188,10 +188,10 @@
   },
   {
     "model": "blightyapp.pub",
-    "pk": 3,
+    "pk": 12,
     "fields": {
       "name": "The Old Neptune",
-      "description": "| KENT | WHITSTABLE | The Old Neptune, known locally as Neppy, is a cosy, seaside boozer and the subject of many a photo of Whitstable. The pub is located directly on the seafront which is an idyllic spot to spend an hour or two on a sunny afternoon. Its close position to the centre of the town makes it walkable from all of the popular eateries and boutiques. They have a good selection of local ales and not so local lagers, as well as standard pub grub. The pebble beach on which it sits is family friendly and ofers a relaxed environment. They host live music events and are also dog-friendly.",
+      "description": "| WHITSTABLE | KENT | The Old Neptune, known locally as Neppy, is a cosy, seaside boozer and the subject of many a photo of Whitstable. The pub is located directly on the seafront which is an idyllic spot to spend an hour or two on a sunny afternoon. Its close position to the centre of the town makes it walkable from all of the popular eateries and boutiques. They have a good selection of local ales and not so local lagers, as well as standard pub grub. The pebble beach on which it sits is family friendly and ofers a relaxed environment. They host live music events and are also dog-friendly.",
       "address": "The Old Neptune, Marine Terrace, Whitstable CT5 1EJ",
       "website": "http://www.thepubonthebeach.co.uk/",
       "image_path": "images/neptune.jpeg",
@@ -200,7 +200,7 @@
   },
   {
     "model": "blightyapp.pub",
-    "pk": 4,
+    "pk": 13,
     "fields": {
       "name": "The Hind's Head",
       "description": "| BRAY | BERKSHIRE | Established as a hunting lodge and coaching inn in the 1400s, The Hind’s Head in Bray is a traditional pub by Heston Blumenthal, infused with the innovative and creative ethos he applies to food and for which he is renowned. The menu refects the establishment’s British heritage. With an interior of soft blues, stained glass and oxblood leather banquettes set against original beams, dark wood fooring and inglenook freplaces, this Michelin-starred restaurant ofers astounding culinary genius in the relaxed setting of a traditional pub environment in one of the most idyllic riverside village locations of Bray.",
@@ -212,31 +212,31 @@
   },
   {
     "model": "blightyapp.pub",
-    "pk": 5,
+    "pk": 14,
     "fields": {
-      "name": "The Yew Tree",
-      "description": "| HIGHCLERE | HAMPSHIRE | With interiors that feel like a contemporary hunting lodge, this stylish Hampshire pub has become somewhat of a destination thanks to its AA Rosette-winning menu and proximity to Highclere Castle. The Yew Tree dates back to the 17th century and, as such, ofers an enchanting blend of old and new. A contemporary copper bar refects the glow of the old freplaces – an inviting place to pop into for a pint. For sunnier days, there’s also an alfresco bar in the garden. Locally caught fsh and game take centre stage on the menu and there are eight cosy bedrooms featuring William Morris wallpaper to tempt you.",
-      "address": "Hollington Cross andover Rd, Highclere RG20 9SE ",
-      "website": "http://www.the-yewtree.org.uk/",
-      "image_path": "images/hinds.jpg",
+      "name": "The Mash Inn",
+      "description": "| RADNAGE | BUCKINGHAMSHIRE | The Mash Inn is a boutique inn in Buckinghamshire with a prestigious reputation. Described as a restaurant with rooms, the open kitchen cooks the best seasonal fair on a bespoke wood-fired grill and many ingredients are sourced from Inn's own kitchen garden. The founder Nick Mash believes in authentic country dining experiences and in supporting local craftsmen and producers. Foraging for ingredients, pulling vegetables out of the ground and having them on your plate within a couple of hours only reinforces this unique yet traditional approach to country dining. The vibe is both rustic an d luxurious and offer beautiful countryside views.",
+      "address": "Horseshoe Road, Bennett End, Radnage, Buckinghamshire HP14 4EB ",
+      "website": "https://themashinn.com/",
+      "image_path": "images/mash.jpeg",
       "region_id": 1
     }
   },
   {
     "model": "blightyapp.pub",
-    "pk": 6,
+    "pk": 15,
     "fields": {
-      "name": "The Fox Goes Free",
-      "description": "| SUSSEX | CHARLTON | SUSSEX | The Fox Goes Free is an alluring country pub in the quaint village of Charlton, West Sussex. The pub is 400 years old & full of oak beams, fint walls and open freplaces. In warmer days, a pleasant afternoon can be spent in their large country garden overlooking the South Downs and nearby Goodwood Estate. This listed building is surrounded by stunning, countryside walks. Wherever possible, their cuisine is locally sourced, home-made and includes favourites such as calamari and chorizo, fsh pie and rib eye steak.",
+      "name": "Gomshall Mill",
+      "description": "| GUILDFORD | SURREY | Situated on the River tillingbourne, Gomshall Mill is a beautiful timber-framed mill dating from Medieval times. Ancient floorboards, oak beam, and open fires create an authentic and traditional pub environment. British classes fill the menu along woth some intentional fusion options. The mill existed at the time of the hostoric Domesday book, a historical manuscript record acting as a census for much of England and parts of Wales completed in 1086 by order of King William the Conqueror. The existing building from the 1600's still contains some of the original milling machinery that gives this pub it's name.",
       "address": "Charlton Road, Charlton PO18 0HU",
       "website": "https://www.thefoxgoesfree.com/",
-      "image_path": "images/hinds.jpg",
+      "image_path": "images/gomshall.jpg",
       "region_id": 1
     }
   },
   {
     "model": "blightyapp.pub",
-    "pk": 7,
+    "pk": 16,
     "fields": {
       "name": "The Fox Goes Free",
       "description": "| CHARLTON | SUSSEX | The Fox Goes Free is an alluring country pub in the quaint village of Charlton, West Sussex. The pub is 400 years old & full of oak beams, fint walls and open freplaces. In warmer days, a pleasant afternoon can be spent in their large country garden overlooking the South Downs and nearby Goodwood Estate. This listed building is surrounded by stunning, countryside walks. Wherever possible, their cuisine is locally sourced, home-made and includes favourites such as calamari and chorizo, fsh pie and rib eye steak.",
@@ -248,7 +248,7 @@
   },
   {
     "model": "blightyapp.pub",
-    "pk": 8,
+    "pk": 17,
     "fields": {
       "name": "Fisherman's Cottage",
       "description": "ISLE OF WIGHT | SHANKLIN | If you fancy food by the sea, the Isle of White’s Fisherman’s Cottage will tick all your boxes with its seafront location and thatched pub charm. You’ll count boats and breakers for neighbours as you enjoy a pint at Shanklin’s oldest pub, built in 1817. It’s located close to Shanklin Chine, a breath-taking gorge that is an island must-see. The water also inspires the menu, with seasonal fsh, Bembridge crab and lobster and an epic fsh and chips taking pride of place alongside traditional meat dishes. Catch the sun on the patio or hunker down in the dining room – this pub is a gem whatever the weather.",
@@ -260,20 +260,114 @@
   },
   {
     "model": "blightyapp.pub",
-    "pk": 9,
+    "pk": 18,
     "fields": {
       "name": "Sir Charles Napier",
       "description": "| OXON | OXFORDSHIRE | The beautiful, 18th-century fint embellished Sir Charles Napier Inn sits in a beautiful spot in the Chilterns amongst scenic English gardens. With two roaring wood fres crackling away, the food here is exceptional and the views are mesmerising. The Inn has earned its reputable status over the decades it has been established. The Sunday roasts here are legendary and ingredients are based on their seasonal availability. Inside, the atmosphere is cosy and leans towards formal in the dining area, which is carpeted and resembles a country house dining room. People travel from far and wide to experience Sir Charles Napier Inn and have done for years.",
       "address": "Spriggs Alley, Chinnor, Oxon OX39 4BX",
       "website": "http://www.sircharlesnapier.co.uk/",
-      "image_path": "images/hinds.jpg",
+      "image_path": "images/napier.jpg",
       "region_id": 1
     }
   },
-
-
-
-
+  {
+    "model": "blightyapp.pub",
+    "pk": 19,
+    "fields": {
+      "name": "The Chequers Inn",
+      "description": "| WOOLSTHORPE | HEREFORDSHIRE | Quintessentially English, with the cricket pitch to prove it, The  Chequers Inn at Woolsthorpe offers award-winning cuisine, a well-stocked bar and unspoilt views to keep diners, drinkers and dog walkers happy for hours.  The Vale of Belvoir is where you’ll find this little gem. And while the drive may take you further afield, if it is an experience you’re after, you’ll definitely get one here.  Open fires and plenty of character features make you feel at home in this 17th century pub. the whiskey lovers who that will think they have died and gone to heaven. With a selection of more than 50 single malts adorn the bar so you can sip for as long as your desire in front of the crackling fire, it's the whiskey lovers who that will think they have died and gone to heaven.",
+      "address": "The Chequers Inn, Main Street, Woolsthorpe By Belvoir, near Grantham, NG32 1LU",
+      "website": "http://www.chequersinn.net/",
+      "image_path": "images/chequers.jpg",
+      "region_id": 3
+    }
+  },
+  {
+    "model": "blightyapp.pub",
+    "pk": 20,
+    "fields": {
+      "name": "The Martins Arms",
+      "description": "| COLSTON BASSETT | NOTTINGHAMSHIRE | Situated in the idyllic village of Colston Bassett, in the Vale of Belvoir, The Martins Arms is a traditional English pub with landscaped gardens overlooked by the village church. Dark reds, dark wood, open fire, candlelight and traditional pictures of Victorian life decorate the walls creating the interior of this popular pub. The menu os traditional with old English dishes like duck, hunstman pie and pork ribeye.The pub holds numerous awards including a reccomendation from Michelin.The Martins Arms encapsulates all that is best in an English pub and is a welcome retreat at any time of the year.",
+      "address": "School Ln, Colston Bassett, Nottingham NG12 3FD, United Kingdom  ",
+      "website": "https://www.themartinsarms.co.uk/",
+      "image_path": "images/martins.jpg",
+      "region_id": 3
+    }
+  },
+  {
+    "model": "blightyapp.pub",
+    "pk": 21,
+    "fields": {
+      "name": "The Riverside at Aymestrey",
+      "description": "| LEOMINSTER | HEREFORDSHIRE  | The Riverside at Aymestrey - Authentic and atmospheric, the 16th century black and white building is surrounded by the natural beauty of the River Lugg valley. Situated deep in the heart of Herefordshire countryside just on the southern edge of the Mortimer Forest, yet still close to Ludlow and Hereford, this pub is considered among the very best in all of England. This is one you won't want to pass by.",
+      "address": "The Riverside Inn, Leominster HR6 9ST, Herefordshire, United Kingdom",
+      "website": " https://www.riversideaymestrey.co.uk/",
+      "image_path": "images/river.jpeg",
+      "region_id": 3
+    }
+  },
+  {
+    "model": "blightyapp.pub",
+    "pk": 23,
+    "fields": {
+      "name": "The West Arms",
+      "description": "| LLANARMON DYFFRYN-CEIRIOG | WREXHAM | Technically just over the Welsh border from Shropshire, this one is just too splendid to leave out. The picturesque village of Llanarmon Dyffryn Ceiriog, in the remote Ceiriog valley, is home to this inn in a farmhouse dating back to 1570. It’s a community hub but also does unusual gourmet food (fish with Menai Strait mussels and sauteed sea vegetables, perhaps). This bit of north Wales has bags of charm and interesting spots include dramatic Pistyll Rhaeadr waterfall, the idiosyncratic town of Llangollen and the 13th-century Chirk Castle, with a vast parkland that’s glorious in autumn, and Erddig House, with Christmas events such as walks and breakfasts with Santa from the end of November. You’re close to Snowdonia, too.",
+      "address": "The West Arms, Llanarmon Dyffryn-Ceiriog, Wrexham, LL20 7LD, Wales",
+      "website": "https://www.thewestarms.com/",
+      "image_path": "images/arms.jpg",
+      "region_id": 3
+    }
+  },
+  {
+    "model": "blightyapp.pub",
+    "pk": 24,
+    "fields": {
+      "name": "The Fuzzy Duck",
+      "description": "| ARMSCOTE | WARWICKSHIRE | With a double aspect fireplace, this contemporary Cotswold pub is the perfect spot to enjoy a lazy weekend lunch or romantic supper with the ability to roll upstairs to one of their luxurious bedrooms, each named after a species of duck which can be found on the lakes of Armscote Manor. Working with the best local suppliers to create delicious seasonal menus, thw cuisine takes it's lead from the beautiful surrounding Cotwolds and the abundant ingredientsthat can be found there. The pub itself feels thoughfully stylish with every detail considered. This is a Cotswold gem.",
+      "address": "TIlmington Rd, Armscote, Stratford-upon-Avon CV37 8DD",
+      "website": "https://wwww.fuzzyduckarmscote.com/",
+      "image_path": "images/fuzzy.jpg",
+      "region_id": 3
+    }
+  },
+  {
+    "model": "blightyapp.pub",
+    "pk": 25,
+    "fields": {
+      "name": "Royal Oak",
+      "description": "| CARDINGTON | SHROPSHIRE | Not too from the walks on Caer Caradoc – a steep, windy four-hour schlep up a Bronze-age hill fort The Royal Oak can be found. On a warm day relax outside on a roadside terrace in front of the establishment and afterwards, take a stroll along the stream at the back. It remains a very ‘old Shropshire’ boozer – patronage ranges from farmers in Tattersall check settling by the fire with still-wet sheepdogs to visitors from the city. Satisfy a craving for bygone rural traditions is with a pint of unfiltered ale at the Royal Oak, located in a fifteenth-century house in Cardington, Shropshire. Don't leave without ordering the pork-and-apple fidget pie, made with gammon cooked in spiced cider, with a golden puff-pastry top.",
+      "address": "The Royal Oak, Cardington, North Church Stretton, Shropshire, SY6 7JZ",
+      "website": "at-the-oak.com",
+      "image_path": "images/royal.jpg",
+      "region_id": 3
+    }
+  },
+  {
+    "model": "blightyapp.pub",
+    "pk": 26,
+    "fields": {
+      "name": "The Bell Inn",
+      "description": "| CARDINGTON | SHROPSHIRE | Not too from the walks on Caer Caradoc – a steep, windy four-hour schlep up a Bronze-age hill fort The Royal Oak can be found. On a warm day relax outside on a roadside terrace in front of the establishment and afterwards, take a stroll along the stream at the back. It remains a very ‘old Shropshire’ boozer – patronage ranges from farmers in Tattersall check settling by the fire with still-wet sheepdogs to visitors from the city. Satisfy a craving for bygone rural traditions is with a pint of unfiltered ale at the Royal Oak, located in a fifteenth-century house in Cardington, Shropshire. Don't leave without ordering the pork-and-apple fidget pie, made with gammon cooked in spiced cider, with a golden puff-pastry top.",
+      "address": "The Royal Oak, Cardington, North Church Stretton, Shropshire, SY6 7JZ",
+      "website": "at-the-oak.com",
+      "image_path": "images/bell1.jpg",
+      "region_id": 3
+    }
+  },
+  {
+    "model": "blightyapp.pub",
+    "pk": 27,
+    "fields": {
+      "name": "Duncombe Arms",
+      "description": "| CARDINGTON | SHROPSHIRE | Not too from the walks on Caer Caradoc – a steep, windy four-hour schlep up a Bronze-age hill fort The Royal Oak can be found. On a warm day relax outside on a roadside terrace in front of the establishment and afterwards, take a stroll along the stream at the back. It remains a very ‘old Shropshire’ boozer – patronage ranges from farmers in Tattersall check settling by the fire with still-wet sheepdogs to visitors from the city. Satisfy a craving for bygone rural traditions is with a pint of unfiltered ale at the Royal Oak, located in a fifteenth-century house in Cardington, Shropshire. Don't leave without ordering the pork-and-apple fidget pie, made with gammon cooked in spiced cider, with a golden puff-pastry top.",
+      "address": "The Royal Oak, Cardington, North Church Stretton, Shropshire, SY6 7JZ",
+      "website": "at-the-oak.com",
+      "image_path": "images/duncom.jpg",
+      "region_id": 3
+    }
+  },
+  
+  
   {
     "model": "blightyapp.patronpub",
     "pk": 1,

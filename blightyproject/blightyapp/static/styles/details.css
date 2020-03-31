@@ -56,23 +56,22 @@ p {
     width: 515px;
 }
 
-.pub-div{    
+.pub-div {    
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    display: flex;
+    /* display: flex; */
     background-color: #ebeae8;
     width: 98%;
-    height: 390px;
-    margin-left:2px ;
-    position: relative;
+    height: 430px;
+    /* margin-left:2px ; */
+    position: relative;    
     top: -35px;        
     z-index:1;
    
 }
 
-.pub-title {
-    
-    width:150%
-
+.pub-desc-details {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 button:focus { outline: none; }
@@ -108,13 +107,16 @@ button:focus { outline: none; }
     font-weight: 200;
     text-align: justify;
     margin-left: 5px;
+    margin-top:10px;
+    width: 100%;
     /* margin-right:200px; */
 }
+
 
 .pub-details {
     font-family: 'Roboto', sans-serif;
     /* margin-left: 50px; */
-    margin-top: 100px;
+    margin-top: 10px;
     margin-left: 18px;
     text-align: justify;
     font-size: 15px;

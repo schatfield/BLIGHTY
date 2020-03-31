@@ -14,7 +14,7 @@
     <section class="template-container">
         <div class="region-name">{{ pubs.0.region }} </div>
         <div class="region-description">{{pubs.0.region.description}}</div>
-       <div class="card-container">
+        <div class="card-container">
        {% for pub in pubs %}
 
        <div class="pub-card">
@@ -27,88 +27,89 @@
             
             
             <div class="pub-div">
-                <div>
+                <div class="pub-title">
+                
+                    <p class="pub-name">{{ pub.name }}</p>
+
+                    <form action="{% url 'blightyapp:patron_pub_list' %}" method="POST">
+                    {% csrf_token %}
+                    {% comment %} the conditionals below are checking for a patron pub record to show things a user has already liked/visited when they go to the page so that their likes and visited shows up for the on the region details page -tracking their usage history basically and the icons will show liked/visited with CSS {% endcomment %}
+                    {% if pub.patron_pub.id is not None %}
+                        <input type="hidden"  id="patron_pub_id" name="patron_pub_id" value="{{ pub.patron_pub.id }}">
+                                            
+                    {% else %}            
+                        <input type="hidden"  id="patron_pub_id" name="patron_pub_id" value="">
+                    {% endif %}
+                        <input type="hidden" id="is_wished" name="is_wished" value="True" />
+                        <input type="hidden"  id="is_visited" name="is_visited" value="False">
+                        <input type="hidden"  id="pub_id" name="pub_id" value="{{ pub.id }}">
+                        <input type="hidden"  id="region_id" name="region_id" value="{{ pub.region_id }}">
+                        <input type="hidden"  name="context" value="pub_guide">
                     
+                    {% if pub.patron_pub.is_wished%}
+                        <button class="heart" type="submit"> <i class="fas fa-heart"></i> </button>   
+                    {% else %}   
+                        <button class="heart" type="submit"> <i class="far fa-heart"></i> </button>   
+                    {% endif %} 
+                    </form>
 
-                    <div class="pub-title">
-                  
-                        <p class="pub-name">{{ pub.name }}</p>
+                    <form action="{% url 'blightyapp:patron_pub_list' %}" method="POST">
+                    {% csrf_token %}
+                    {% if pub.patron_pub.id is not None %}
+                        <input type="hidden"  id="patron_pub_id" name="patron_pub_id" value="{{ pub.patron_pub.id }}">                    
+                    {% else %}
+                        <input type="hidden"  id="patron_pub_id" name="patron_pub_id" value="">
+                    {% endif %}
+                        <input type="hidden" id="is_wished" name="is_wished" value="False" />
+                        <input type="hidden"  id="is_visited" name="is_visited" value="True">
+                        <input type="hidden"  id="pub_id" name="pub_id" value="{{ pub.id }}">
+                        <input type="hidden"  id="region_id" name="region_id" value="{{ pub.region_id }}">
+                        <input type="hidden"  id="context" name="context" value="pub_guide">
 
-                        <form action="{% url 'blightyapp:patron_pub_list' %}" method="POST">
-                        {% csrf_token %}
-                        {% comment %} the conditionals below are checking for a patron pub record to show things a user has already liked/visited when they go to the page so that their likes and visited shows up for the on the region details page -tracking their usage history basically and the icons will show liked/visited with CSS {% endcomment %}
-                        {% if pub.patron_pub.id is not None %}
-                            <input type="hidden"  id="patron_pub_id" name="patron_pub_id" value="{{ pub.patron_pub.id }}">
-                                                
-                        {% else %}            
-                            <input type="hidden"  id="patron_pub_id" name="patron_pub_id" value="">
-                        {% endif %}
-                            <input type="hidden" id="is_wished" name="is_wished" value="True" />
-                            <input type="hidden"  id="is_visited" name="is_visited" value="False">
-                            <input type="hidden"  id="pub_id" name="pub_id" value="{{ pub.id }}">
-                            <input type="hidden"  id="region_id" name="region_id" value="{{ pub.region_id }}">
-                            <input type="hidden"  name="context" value="pub_guide">
-                        
-                        {% if pub.patron_pub.is_wished%}
-                            <button class="heart" type="submit"> <i class="fas fa-heart"></i> </button>   
-                        {% else %}   
-                            <button class="heart" type="submit"> <i class="far fa-heart"></i> </button>   
-                        {% endif %} 
-                        </form>
+                    {% if pub.patron_pub.is_visited%} 
+                        <button class="check" type="submit"> <i class="fas fa-check-square"></i> </button>   
+                    {% else %}
+                        <button class="check" type="submit"> <i class="far fa-check-square"></i> </button>   
+                    {% endif %} 
+                    </form>
 
-                        <form action="{% url 'blightyapp:patron_pub_list' %}" method="POST">
-                        {% csrf_token %}
-                        {% if pub.patron_pub.id is not None %}
-                            <input type="hidden"  id="patron_pub_id" name="patron_pub_id" value="{{ pub.patron_pub.id }}">                    
-                        {% else %}
-                            <input type="hidden"  id="patron_pub_id" name="patron_pub_id" value="">
-                        {% endif %}
-                            <input type="hidden" id="is_wished" name="is_wished" value="False" />
-                            <input type="hidden"  id="is_visited" name="is_visited" value="True">
-                            <input type="hidden"  id="pub_id" name="pub_id" value="{{ pub.id }}">
-                            <input type="hidden"  id="region_id" name="region_id" value="{{ pub.region_id }}">
-                            <input type="hidden"  id="context" name="context" value="pub_guide">
+                    {% if pub.patron_pub.id is not None %}
+                        {% if pub.patron_pub.is_visited %}
+                            {% if pub.patron_pub.has_experience %}
+                                <button class="plus" type="submit"> <a href ={% url 'blightyapp:experience_list' %} class='' style="">
+                                <i class="fas fa-plus-square"></i></a></button>
+                            
+                            {% else %}
+                                <button class="plus" type="submit"> <a href ={% url 'blightyapp:experience_form' pub.patron_pub.id %} class='' style="">
+                                <i class="far fa-plus-square"></i> </a></button>
+                            
 
-                        {% if pub.patron_pub.is_visited%} 
-                            <button class="check" type="submit"> <i class="fas fa-check-square"></i> </button>   
-                        {% else %}
-                            <button class="check" type="submit"> <i class="far fa-check-square"></i> </button>   
-                        {% endif %} 
-                        </form>
-
-                        {% if pub.patron_pub.id is not None %}
-                            {% if pub.patron_pub.is_visited %}
-                                {% if pub.patron_pub.has_experience %}
-                                   <button class="plus" type="submit"> <a href ={% url 'blightyapp:experience_list' %} class='' style="">
-                                    <i class="fas fa-plus-square"></i></a></button>
-                                
-                                {% else %}
-                                    <button class="plus" type="submit"> <a href ={% url 'blightyapp:experience_form' pub.patron_pub.id %} class='' style="">
-                                    <i class="far fa-plus-square"></i> </a></button>
-                                
-
-                                {% endif %}
                             {% endif %}
                         {% endif %}
-                    </div>
+                    {% endif %}
+                </div>
 
-                    </br>
-                    <div class="pub-desc"> {{ pub.description }}</div>
-                </br>
-                </div>
+                <div class="pub-desc-details">
+                    
+
+                
+                    <p class="pub-desc"> {{ pub.description }}</p>
+
+                    <div class="pub-details">
+                        <div class="pub-address">A D D R E S S:</div>
+                        </br>
+                        <div class="address">{{ pub.address }}</div>
+                        </br>
+                        <div class="pub-web">W E B S I T E:</div>
+                        </br>
+                        <div class="web"><a href="{{pub.website}}">{{pub.website}}</a></div>                                    
+                    </div>
                    
-                <div class="pub-details">
-                    <div class="pub-address">A D D R E S S:</div>
-                     </br>
-                    <div class="address">{{ pub.address }}</div>
-                    </br>
-                    <div class="pub-web">W E B S I T E:</div>
-                    </br>
-                    <div class="web"> {{ pub.website}}</div>
-                </div>
-            </div>            
-        </div>                
+                </div>            
+            </div>  
+            </div>              
         {% endfor %}
+                          
     
     </div>
     </section>
