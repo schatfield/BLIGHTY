@@ -15,7 +15,7 @@ p {
     display: flex;
     transition: 0.3s;
     border-radius: 5px; /* 5px rounded corners */
-    width: 512px;  
+    width: 500px;  
     flex-wrap: wrap;
     justify-content: space-evenly;      
 }
@@ -47,8 +47,8 @@ p {
 }
 
 .main-image{
-    height: 400px;
-    width: 515px;        
+    height: 380px;
+    width: 500px;        
 }
 
 .image-div {
@@ -133,6 +133,7 @@ button:focus { outline: none; }
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 900;   
+    margin-top: 25px;
 }
 
 .pub-web{

@@ -194,7 +194,7 @@
       "description": "| WHITSTABLE | KENT | The Old Neptune, known locally as Neppy, is a cosy, seaside boozer and the subject of many a photo of Whitstable. The pub is located directly on the seafront which is an idyllic spot to spend an hour or two on a sunny afternoon. Its close position to the centre of the town makes it walkable from all of the popular eateries and boutiques. They have a good selection of local ales and not so local lagers, as well as standard pub grub. The pebble beach on which it sits is family friendly and ofers a relaxed environment. They host live music events and are also dog-friendly.",
       "address": "The Old Neptune, Marine Terrace, Whitstable CT5 1EJ",
       "website": "http://www.thepubonthebeach.co.uk/",
-      "image_path": "images/neptune.jpeg",
+      "image_path": "images/whits.jpg",
       "region_id": 1
     }
   },
@@ -240,7 +240,7 @@
     "fields": {
       "name": "The Fox Goes Free",
       "description": "| CHARLTON | SUSSEX | The Fox Goes Free is an alluring country pub in the quaint village of Charlton, West Sussex. The pub is 400 years old & full of oak beams, fint walls and open freplaces. In warmer days, a pleasant afternoon can be spent in their large country garden overlooking the South Downs and nearby Goodwood Estate. This listed building is surrounded by stunning, countryside walks. Wherever possible, their cuisine is locally sourced, home-made and includes favourites such as calamari and chorizo, fsh pie and rib eye steak.",
-      "address": "Charlton Road, Charlton PO18 0HU",
+      "address": "The Fox Goes Free, Charlton Road, Charlton PO18 0HU",
       "website": "https://www.thefoxgoesfree.com/",
       "image_path": "images/fox.jpg",
       "region_id": 1
@@ -252,7 +252,7 @@
     "fields": {
       "name": "Fisherman's Cottage",
       "description": "ISLE OF WIGHT | SHANKLIN | If you fancy food by the sea, the Isle of White’s Fisherman’s Cottage will tick all your boxes with its seafront location and thatched pub charm. You’ll count boats and breakers for neighbours as you enjoy a pint at Shanklin’s oldest pub, built in 1817. It’s located close to Shanklin Chine, a breath-taking gorge that is an island must-see. The water also inspires the menu, with seasonal fsh, Bembridge crab and lobster and an epic fsh and chips taking pride of place alongside traditional meat dishes. Catch the sun on the patio or hunker down in the dining room – this pub is a gem whatever the weather.",
-      "address": "Shanklin Esplanade, Shanklin, Isle of Whight PO37 6BN",
+      "address": "Fisherman's Cottage, Shanklin Esplanade, Shanklin, Isle of Whight PO37 6BN",
       "website": "https://fishermanscottageshanklin.co.uk/",
       "image_path": "images/fisherman.jpeg",
       "region_id": 1
@@ -275,7 +275,7 @@
     "pk": 19,
     "fields": {
       "name": "The Chequers Inn",
-      "description": "| WOOLSTHORPE | HEREFORDSHIRE | Quintessentially English, with the cricket pitch to prove it, The  Chequers Inn at Woolsthorpe offers award-winning cuisine, a well-stocked bar and unspoilt views to keep diners, drinkers and dog walkers happy for hours.  The Vale of Belvoir is where you’ll find this little gem. And while the drive may take you further afield, if it is an experience you’re after, you’ll definitely get one here.  Open fires and plenty of character features make you feel at home in this 17th century pub. the whiskey lovers who that will think they have died and gone to heaven. With a selection of more than 50 single malts adorn the bar so you can sip for as long as your desire in front of the crackling fire, it's the whiskey lovers who that will think they have died and gone to heaven.",
+      "description": "| WOOLSTHORPE | HEREFORDSHIRE | Quintessentially English, with the cricket pitch to prove it, The  Chequers Inn at Woolsthorpe offers award-winning cuisine, a well-stocked bar and unspoilt views to keep diners, drinkers and dog walkers happy for hours.  The Vale of Belvoir is where you’ll find this little gem. And while the drive may take you further afield, if it is an experience you’re after, you’ll definitely get one here.  Open fires and plenty of character features make you feel at home in this 17th century pub. the whiskey lovers who that will think they have died and gone to heaven. for the whiskey lovers, there's a selection of more than 50 single malts adorn the bar so you can sip for as long as your desire in front of the crackling fire.",
       "address": "The Chequers Inn, Main Street, Woolsthorpe By Belvoir, near Grantham, NG32 1LU",
       "website": "http://www.chequersinn.net/",
       "image_path": "images/chequers.jpg",
@@ -287,7 +287,7 @@
     "pk": 20,
     "fields": {
       "name": "The Martins Arms",
-      "description": "| COLSTON BASSETT | NOTTINGHAMSHIRE | Situated in the idyllic village of Colston Bassett, in the Vale of Belvoir, The Martins Arms is a traditional English pub with landscaped gardens overlooked by the village church. Dark reds, dark wood, open fire, candlelight and traditional pictures of Victorian life decorate the walls creating the interior of this popular pub. The menu os traditional with old English dishes like duck, hunstman pie and pork ribeye.The pub holds numerous awards including a reccomendation from Michelin.The Martins Arms encapsulates all that is best in an English pub and is a welcome retreat at any time of the year.",
+      "description": "| COLSTON BASSETT | NOTTINGHAM | Situated in the idyllic village of Colston Bassett, in the Vale of Belvoir, The Martins Arms is a traditional English pub with landscaped gardens overlooked by the village church. Dark reds, dark wood, open fire, candlelight and traditional pictures of Victorian life decorate the walls creating the interior of this popular pub. The menu os traditional with old English dishes like duck, hunstman pie and pork ribeye.The pub holds numerous awards including a reccomendation from Michelin.The Martins Arms encapsulates all that is best in an English pub and is a welcome retreat at any time of the year.",
       "address": "School Ln, Colston Bassett, Nottingham NG12 3FD, United Kingdom  ",
       "website": "https://www.themartinsarms.co.uk/",
       "image_path": "images/martins.jpg",
@@ -314,7 +314,7 @@
       "description": "| LLANARMON DYFFRYN-CEIRIOG | WREXHAM | Technically just over the Welsh border from Shropshire, this one is just too splendid to leave out. The picturesque village of Llanarmon Dyffryn Ceiriog, in the remote Ceiriog valley, is home to this inn in a farmhouse dating back to 1570. It’s a community hub but also does unusual gourmet food (fish with Menai Strait mussels and sauteed sea vegetables, perhaps). This bit of north Wales has bags of charm and interesting spots include dramatic Pistyll Rhaeadr waterfall, the idiosyncratic town of Llangollen and the 13th-century Chirk Castle, with a vast parkland that’s glorious in autumn, and Erddig House, with Christmas events such as walks and breakfasts with Santa from the end of November. You’re close to Snowdonia, too.",
       "address": "The West Arms, Llanarmon Dyffryn-Ceiriog, Wrexham, LL20 7LD, Wales",
       "website": "https://www.thewestarms.com/",
-      "image_path": "images/arms.jpg",
+      "image_path": "images/arms.png",
       "region_id": 3
     }
   },
@@ -346,11 +346,11 @@
     "model": "blightyapp.pub",
     "pk": 26,
     "fields": {
-      "name": "The Bell Inn",
-      "description": "| CARDINGTON | SHROPSHIRE | Not too from the walks on Caer Caradoc – a steep, windy four-hour schlep up a Bronze-age hill fort The Royal Oak can be found. On a warm day relax outside on a roadside terrace in front of the establishment and afterwards, take a stroll along the stream at the back. It remains a very ‘old Shropshire’ boozer – patronage ranges from farmers in Tattersall check settling by the fire with still-wet sheepdogs to visitors from the city. Satisfy a craving for bygone rural traditions is with a pint of unfiltered ale at the Royal Oak, located in a fifteenth-century house in Cardington, Shropshire. Don't leave without ordering the pork-and-apple fidget pie, made with gammon cooked in spiced cider, with a golden puff-pastry top.",
-      "address": "The Royal Oak, Cardington, North Church Stretton, Shropshire, SY6 7JZ",
-      "website": "at-the-oak.com",
-      "image_path": "images/bell1.jpg",
+      "name": "The Olive Branch",
+      "description": "| CLIPSHAM | NOTTINGHAMSHIRE | The pub was originally three farm workers' cottages which were knocked together to make a pub in 1890. Open fires, antique tables and chairs mixed with pine kitchen tables and benches create an informal atmosphere in this Michelin Guide reccomended pub. Chesnuts are roasted on the fire in winter and homeade lemonade is served in the garden at summer. The outside gardens and terrace are the perfect place to spend summer lunches or late evening dinners under the stars. The terrace also features a wood-fored pizza oven serving up homemade pizzas topped with local charcuterie, cheeses, and herbs. Local vineyards and microbreweries make up the drinks menu, along with classic real ales.",
+      "address": "The Olive Branch, Main Street, Clipsham, Rutland, LE15 7SH",
+      "website": "https://www.theolivebranchpub.com/",
+      "image_path": "images/olive.jpeg",
       "region_id": 3
     }
   },
@@ -359,15 +359,122 @@
     "pk": 27,
     "fields": {
       "name": "Duncombe Arms",
-      "description": "| CARDINGTON | SHROPSHIRE | Not too from the walks on Caer Caradoc – a steep, windy four-hour schlep up a Bronze-age hill fort The Royal Oak can be found. On a warm day relax outside on a roadside terrace in front of the establishment and afterwards, take a stroll along the stream at the back. It remains a very ‘old Shropshire’ boozer – patronage ranges from farmers in Tattersall check settling by the fire with still-wet sheepdogs to visitors from the city. Satisfy a craving for bygone rural traditions is with a pint of unfiltered ale at the Royal Oak, located in a fifteenth-century house in Cardington, Shropshire. Don't leave without ordering the pork-and-apple fidget pie, made with gammon cooked in spiced cider, with a golden puff-pastry top.",
-      "address": "The Royal Oak, Cardington, North Church Stretton, Shropshire, SY6 7JZ",
-      "website": "at-the-oak.com",
+      "description": "| ASHBOURNE | DERBYSHIRE | The Duncombe Arms is an 1850's inn with a history that had an end date before the current owners brought it back to life in the form of a passion project in 2012. A pub that was once the center of Ashbourne life is proudly bringing the community back together again with modern British food of fine dining quality and an atmoshphere of warmth that only that of a good pub can muster. Family owned, this eclectic and rutic pub features roaring fires, leather banquettes, polished wooden tables, and candleight in abundance creating an atmosphere of sophisticated cheer. They also have an extensive wine list ranging from value table wine to refined selections- it's both approachable and impressive. Don't miss the spacious gardens with views that would be fit for a Jane Austen novel.",
+      "address": "The Duncombe Arms Ellastone, Ashbourne DE6 2GZ",
+      "website": "http://www.duncombearms.co.uk/",
       "image_path": "images/duncom.jpg",
       "region_id": 3
     }
   },
-  
-  
+  {
+    "model": "blightyapp.pub",
+    "pk": 28,
+    "fields": {
+      "name": "The Bull & Swan",
+      "description": "| STAMFORD | LINCOLNSHIRE | The Bull & Swan is a 16th century honey-stone pub with rooms in beautiful town of Stamford in the county of Lincolnshire. The pub recently turned it's courtyard into an abundant kitchen garden with ranks of raised beds all planted up with herbs, vegetables and fruit trees. The garden is complete with a potting shed that turns out fire cooked pizzas for late night eats. The interior has a country house vibe, painted in inky hues and dressed with dark wood, chocolate leather seating and portraits on the walls. Wood burners and fires warm the pub on chilly evenings. For an extra treat you won't find everywhere, don't miss film nights in the Garden Cinema, Thursdays and Sundays, April-September.",
+      "address": "The Bull & Swan at Burghley, St Martins,Stamford, Lincolnshire, PE9 2LJ",
+      "website": "https://www.hillbrookehotels.co.uk/the-bull-and-swan/",
+      "image_path": "images/bull.jpg",
+      "region_id": 3
+    }
+  },
+  {
+    "model": "blightyapp.pub",
+    "pk": 29,
+    "fields": {
+      "name": "The Brisley Bell Inn",
+      "description": "| BRISLEY | NORFOLK | The Brisley Bell Inn is a 17th-century pub which has been tastefully and sympathetically renovated to become a stunning destination pub. With a proper large drinking bar, a relaxed atmosphere and beautiful surroundings inside and out, this is a pub where anyone and everyone is welcome and its' community is at its' heart. In addition to the bar area, there is a quiet dining room and a cosy snug kitted out with books and an open fire. There is also a bright and spacious garden room for al fresco dining in summer which doubles up as a live music space. The food is reasonably priced, but book ahead as it can get very busy. Guest beers are rotated each month & dogs are welcomed!",
+      "address": "The Brisley Bell, The Green, Brisley, Dereham NR20 5DW, United Kingdom",
+      "website": "https://thebrisleybell.co.uk/ ",
+      "image_path": "images/bbelli.jpg",
+      "region_id": 4
+    }
+  },
+
+  {
+    "model": "blightyapp.pub",
+    "pk": 30,
+    "fields": {
+      "name": "The Gunton Arms",
+      "description": "| THORPE MARKET | NORFOLK |  The Gunton Arms is a unique pub located within a historic 1,000-acre deer park dating back to the 18thcentury. Art dealer, Ivor Braka bought the pub in 2009 and spent 2 years renovating which included selecting appropriate pieces from his art collection with works by Tracey Emin and Damien Hirst now hung on the walls. The menu is curated by Mark Hix and includes venison caught from within the grounds. Local seaside fare Brancaster mussles and Cromer crab are popular with walkers who frequent the pub. Raoring fires feature throughout, dogs are welcome and private dining is available upon request.",
+      "address": "The Gunton Arms, Norwich NR11 8TZ, United Kingdom",
+      "website": "https://www.theguntonarms.co.uk/",
+      "image_path": "images/gun.jpg",
+      "region_id": 4
+    }
+  },
+  {
+    "model": "blightyapp.pub",
+    "pk": 31,
+    "fields": {
+      "name": "The White Horse Inn",
+      "description": "| BADINGHAM | SUFFOLK | The White Horse at Badingham is a picturesque 15th century coaching inn with wisteria creeping up the walls and a beautiful outdoor area for enjoying their summer only pizza oven. Interesting details inside include original open fores and exposed beams. The pub is often candlelit, adding to the cosy ambience. Their real ales come from a number of local independent breweries and Giggler, a traditional local cider, is sourced from the village of Bramfield just 8 miles away. Dogs are welcome to make themselves at home while you do.",
+      "address": "The Orange Tree, High Street, Thornham,Norfolk, PE36 6LY",
+      "website": "www.theorangetreethornham.co.uk/",
+      "image_path": "images/white.png",
+      "region_id": 4
+    }
+  }, 
+  {
+    "model": "blightyapp.pub",
+    "pk": 32,
+    "fields": {
+      "name": "The Kings Head",
+      "description": "| LETHERINGSETT | NORFOLK | The Kings Head in Letheringsett is nestled just outside the bustling Norfolk town of Holt. Housed within a handsome Georgian Manor from 1808 that has no less than three fres to create the bonafide country pub atmosphere. Ceilings are vaulted, shelves are adorned with books and grandfather clocks chime in the background. All of these details combin to create a homely welcome. Quality ale is a priority with at least three available at all times. There is also a latge country garden with a willow maze and climbing tower to keep the children amused. Children of the four legged and furry variety also welcomed.",
+      "address": "The Kings Head, Holt Rd, Holt NR25 7AR, United Kingdom",
+      "website": "https://www.kingsheadnorfolk.co.uk/",
+      "image_path": "images/kings.png",
+      "region_id": 4
+    }
+  }, 
+  {
+    "model": "blightyapp.pub",
+    "pk": 33,
+    "fields": {
+      "name": "The Ramsholt Arms",
+      "description": "| RAMSHOLT | SUFFOLK | A popular riverside pub, situated on the scenic banks of the river Deben. The pub is located down a country lane and is a relaxing spot if you are looking to get away from the hustle and bustle. Dishes include favourites such as fish pie and slow cooked beef stew. Taken over by thw owners of the nearby Uffrod Crown, the pub was given a complete refurbishment in 2013. There is a small stretch of beach on which to let the kids run free and form where locals launch their boats. On a sunny afternoon, there are few places we would rather be. Dogs are welcome.",
+      "address": "The Ramsholt Arms, Dock Rd, Woodbridge IP12 3AB, United Kingdom",
+      "website": "http://www.theramsholtarms.com/",
+      "image_path": "images/ram.jpg",
+      "region_id": 4
+    }
+  }, 
+  {
+    "model": "blightyapp.pub",
+    "pk": 34,
+    "fields": {
+      "name": "The Orange Tree",
+      "description": "| THORNHAM | NORFOLK | Vibrant roses climb up the 400-year-old white stone walls of The Orange Tree, creating an idyllic appraoch as you arrive. The area is perfect for walks on the nearby sweeping sandy beaches and peaceful harbour where working fishing boats still bring in the daily catch. The Oranage Tree is a contemporary, awars-winning pub in one of Norfolk's most picturesquw regions. The menu is innovative focusing on its' access to some of the finest seafood England has to offer.",
+      "address": "The Orange Tree, High Street, Thornham,Norfolk, PE36 6LY",
+      "website": "http://www.theorangetreethornham.co.uk/",
+      "image_path": "images/orange.jpg",
+      "region_id": 4
+    }
+  }, 
+  {
+    "model": "blightyapp.pub",
+    "pk": 35,
+    "fields": {
+      "name": "The Rose and Crown",
+      "description": "| SNETTISHAM | NORFOLK | The Rose & Crown is in the charming, ancient Norfolk village of Snettisham, just down the road from Snettisham’s famous 14th century church (it is said that The Rose & Crown was built to provide food and drink to men building the church), and opposite the village cricket pitch. Still holds true to its long history as a coaching Inn with a traditional pub feel and warm hospitality.",
+      "address": "The Rose & Crown, Old Church Road, Snettisham, Norfolk PE31 7LX",
+      "website": "https://www.roseandcrownsnettisham.co.uk/",
+      "image_path": "images/rose.jpeg",
+      "region_id": 4
+    }
+  }, 
+  {
+    "model": "blightyapp.pub",
+    "pk": 36,
+    "fields": {
+      "name": "The Duck Inn",
+      "description": "| STANHOE| NORFOLK | The Duck Inn ",
+      "address": "The Duck Inn, Burnham Road, Stanhoe, King’s Lynn, Norfolk, PE31 8QD",
+      "website": "http://www.duckinn.co.uk/",
+      "image_path": "images/duck.jpg",
+      "region_id": 4
+    }
+  }, 
   {
     "model": "blightyapp.patronpub",
     "pk": 1,
