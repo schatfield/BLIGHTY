@@ -1,9 +1,9 @@
 # BLIGHTY
 
-#What is BLIGHTY?
+# What is BLIGHTY?
 
 
-#Why was BLIGHTY created?
+# Why was BLIGHTY created?
 
 
 # Instructions for running and installing BLIGHTY
