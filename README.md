@@ -2,7 +2,7 @@
 
 # What is BLIGHTY?
 
-
+With Blighty users are able to track the entire life cycle of their own personal bucket list  from daydream to experience by creating collections of pubs they’d like to visit, keep track of pubs they’ve been to, and there’s the ability to record their experiences at pubs they’ve checked off their list.
 
 
 # Why was BLIGHTY created?
