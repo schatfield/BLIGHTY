@@ -44,4 +44,4 @@ Run your development server
     `python manage.py runserver`
 
 # Entity Relationship Diagram
-https://imgur.com/xBuLENr
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/Q4xHQP0"><a href="//imgur.com/a/Q4xHQP0">ERD</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
