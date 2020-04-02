@@ -44,4 +44,4 @@ Run your development server
     `python manage.py runserver`
 
 # Entity Relationship Diagram
-<img src="shawnachatfield/downloads/BLIGHTY_ERD.png">
+https://imgur.com/xBuLENr
