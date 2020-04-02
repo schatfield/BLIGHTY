@@ -1,9 +1,9 @@
 # BLIGHTY
 
-##What is BLIGHTY?
+#What is BLIGHTY?
 
 
-##Why was BLIGHTY created?
+#Why was BLIGHTY created?
 
 
 # Instructions for running and installing BLIGHTY
@@ -14,12 +14,12 @@ Clone this repo using the following command then cd into it
 
 Mac users: create your virtual environment in Terminal
 
-    `python -m venv blightyenv`<br>
+    `python -m venv blightyenv`
     `source ./blightyenv/bin/activate`
     
 Windows users: create your virtual environment in Command Line
 
-    `python -m venv blightyenv`<br>
+    `python -m venv blightyenv`
     `source ./blightyenv/Scripts/activate`
 
 Install app dependencies
@@ -28,7 +28,7 @@ Install app dependencies
 
 Build your database from the existing models
 
-    `python manage.py makemigrations blightyapp`<br>
+    `python manage.py makemigrations blightyapp`
     `python manage.py migrate`
 
 Create a superuser for your local version of the app
