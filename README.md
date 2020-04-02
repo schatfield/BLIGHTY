@@ -1,7 +1,8 @@
 # BLIGHTY
 
-Blight·y /ˈblīdē/ noun BRITISH
-
+Blight·y 
+/ˈblīdē/ 
+noun BRITISH
 An informal and typically affectionate term for Britain or England, chiefly as used by soldiers of World War I and World War II.
 
 
