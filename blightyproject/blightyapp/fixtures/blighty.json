@@ -423,7 +423,7 @@
       "description": "| LETHERINGSETT | NORFOLK | The Kings Head in Letheringsett is nestled just outside the bustling Norfolk town of Holt. Housed within a handsome Georgian Manor from 1808 that has no less than three fres to create the bonafide country pub atmosphere. Ceilings are vaulted, shelves are adorned with books and grandfather clocks chime in the background. All of these details combin to create a homely welcome. Quality ale is a priority with at least three available at all times. There is also a latge country garden with a willow maze and climbing tower to keep the children amused. Children of the four legged and furry variety also welcomed.",
       "address": "The Kings Head, Holt Rd, Holt NR25 7AR, United Kingdom",
       "website": "https://www.kingsheadnorfolk.co.uk/",
-      "image_path": "images/kings.png",
+      "image_path": "images/kings.jpeg",
       "region_id": 4
     }
   }, 
@@ -459,7 +459,7 @@
       "description": "| SNETTISHAM | NORFOLK | The Rose & Crown is in the charming, ancient Norfolk village of Snettisham, just down the road from Snettisham’s famous 14th century church (it is said that The Rose & Crown was built to provide food and drink to men building the church), and opposite the village cricket pitch. Still holds true to its long history as a coaching Inn with a traditional pub feel and warm hospitality.",
       "address": "The Rose & Crown, Old Church Road, Snettisham, Norfolk PE31 7LX",
       "website": "https://www.roseandcrownsnettisham.co.uk/",
-      "image_path": "images/rose.jpeg",
+      "image_path": "images/rose.jpg",
       "region_id": 4
     }
   }, 
@@ -467,11 +467,23 @@
     "model": "blightyapp.pub",
     "pk": 36,
     "fields": {
-      "name": "The Duck Inn",
-      "description": "| STANHOE| NORFOLK | The Duck Inn ",
-      "address": "The Duck Inn, Burnham Road, Stanhoe, King’s Lynn, Norfolk, PE31 8QD",
-      "website": "http://www.duckinn.co.uk/",
-      "image_path": "images/duck.jpg",
+      "name": "The Queen",
+      "description": "| BRANDESTON | SUFFOLK | The Queen",
+      "address": "The Queen, The Street, Brandeston, Suffolk, IP13 7AD",
+      "website": "http://www.thequeenatbrandeston.co.uk/",
+      "image_path": "images/queen.png",
+      "region_id": 4
+    }
+  }, 
+  {
+    "model": "blightyapp.pub",
+    "pk": 36,
+    "fields": {
+      "name": "The Cock Inn",
+      "description": "| Polstead | ESSEX | The Cock Inn is an attractive 16th century pubThis attractive 16th century pub is in the centre of the picture-postcard village of Polstead. The building next door (to the left) was the original Cock Inn. It is believed the licence changed in the late 19th century. The pub is now famed for the quality of its food and drink and is remarkably popular, even though it's about 5km away from the nearest main road. Near the pub is the playing field, known locally as the pitch, which hosts an annual music festival around the summer solstice called Polstice, with local punk, folk and rock bands playing.",
+      "address": "www.thecockinnpolstead.co.uk",
+      "website": "",
+      "image_path": "images/queen.png",
       "region_id": 4
     }
   }, 
