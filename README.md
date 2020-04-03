@@ -9,10 +9,6 @@ noun BRITISH <br>
 BLIGHTY is curated directory of some of the best country pubs in England. With Blighty pub lovers are able to track the entire life cycle of their own personal bucket list from daydream to experience by creating collections of pubs they’d like to visit, keep track of pubs they’ve been to, and there’s the ability to record their experiences at pubs they’ve checked off their list.
 
 
-# Why was BLIGHTY created?
-
-As a self professed Anglophile, BLIGHTY is my personal loveletter to one of England's most unique institutions that is the English Pub. 
-
 # Instructions for running and installing BLIGHTY
 
 Clone this repo using the following command then cd into it
