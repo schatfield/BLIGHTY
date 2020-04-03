@@ -51,6 +51,5 @@ Run your development server
     `python manage.py runserver`
 
 # Entity Relationship Diagram
-<img src="https://imgur.com/xBuLENr">
-![Blighty ERD](https://imgur.com/xBuLENr)
+[ERD](https://i.imgur.com/xBuLENr.png)
 
