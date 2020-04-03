@@ -182,7 +182,7 @@
       "description": "| BIDDENDEN | KENT | The Three Chimneys is an award-winning, independent country pub in Biddenden. Exceptional scenery surrounds the building, which dates back to 1420, and being steeped in local history is everything one would expect from a traditional Kentish pub. Visitors are greeted with dark oak beams, roaring fires, and five separate dining areas strewn with aged hops for which the county of Kent has long been known. Craig Smith, who packed in his City job to take over the pub in 1999 serves Welsh Rarebit, Haddock Fishcakes and deep fried brie. There are five luxury bedrooms available but oddly boasts only two chimneys. An ideal refreshment stop-of if you are visiting nearby Sissinghurst Castle or Scotney Castle. Dogs are welcome.",
       "address": "Three Chimneys, Hareplain Road, Biddenden TN27 8LW",
       "website": "http://thethreechimneys.co.uk/",
-      "image_path": "images/chimneys.jpg",
+      "image_path": "images/chimney.jpg",
       "region_id": 1
     }
   },
@@ -485,6 +485,66 @@
       "website": "",
       "image_path": "images/queen.png",
       "region_id": 4
+    }
+  }, 
+  {
+    "model": "blightyapp.pub",
+    "pk": 38,
+    "fields": {
+      "name": "The Lister Arms",
+      "description": "| MALHAM | YORKSHIRE | The historic Lister Arms is a 17th-century coaching inn with captivating period features and an exterior embellished in vibrant green foliage. Set in the heart of the stunning village of Malham, The Lister Arms has been welcoming travellers and locals alike for hundreds of years offering them crackling fires, pints of ale, hearty dishes and at the end of the day a delightfully comfy bed for a fantastic night’s sleep. Guests can choose to relax in the secret garden during the summer or cosy up to the log fire in the barn lounge in the winter. The inn’s interior has been modernised whilst retaining its rich history and features, from its beams and wooden floors to its original fireplaces.",
+      "address": "The Lister Arms, Malham, Skipton BD23 4DB, United Kingdom",
+      "website": "https://www.listerarms.co.uk/",
+      "image_path": "images/lister.jpg",
+      "region_id": 5
+    }
+  }, 
+  {
+    "model": "blightyapp.pub",
+    "pk": 39,
+    "fields": {
+      "name": "The Star Inn",
+      "description": "| YORK | YORKSHIRE | Some six hundred years have made The Star Inn the charming pub that it is today. And what a pub it is. Perched on the banks of the river Ouse in the medieval city of York, The Star Inn isn't afraid to make a splash. Outside boasts a splendid thatch roof while inside a dramatic and eclectic atmosphere awaits. Comfort isn't sacrificed at the expense of an impression though, it is in equal parts characterful as it is in inviting warmth. Expect food that is propelled by the seasons and that places provenance of ingredients at its heart.Clearly they are doing something right in the pub grub department seeing as the pub's offerings have earned it a prestigious Michelin star. A title they have proudly held for four years in a row now.",
+      "address": "The Star Inn, Main St, Harome, Harome, near Helmsley YO62 5JE, United Kingdom",
+      "website": "http://www.thestaratharome.co.uk/",
+      "image_path": "images/star.jpeg",
+      "region_id": 5
+    }
+  }, 
+  {
+    "model": "blightyapp.pub",
+    "pk": 40,
+    "fields": {
+      "name": "The Craven Arms",
+      "description": "| APPLETREEWICK | YORKSHIRE | The Craven Arms in Appletreewick is a picturepostcard, old English pub, with a great reputation for its food and real ale. The ale is all traditionally cask-conditioned and the artisan dishes are lovingly prepared from local ingredients on the premises. The Craven Arms began its life as a 16th-century farmhouse and many of the original features remain. Open Fires create a cozy atmosphere and on warmer days you can enjoy the spectacular views  of scenery from the garden. The pub has its own herb garden and the thatched Cruck Barn on the premises hosts events.",
+      "address": "The Craven Arms, Appletreewick, Skipton BD23 6DA, United Kingdom",
+      "website": "craven-cruckbarn.co.uk",
+      "image_path": "images/craven.jpg",
+      "region_id": 5
+    }
+  }, 
+  {
+    "model": "blightyapp.pub",
+    "pk": 41,
+    "fields": {
+      "name": "The Craven Arms",
+      "description": "| APPLETREEWICK | YORKSHIRE | The Craven Arms in Appletreewick is a picturepostcard, old English pub, with a great reputation for its food and real ale. The ale is all traditionally cask-conditioned and the artisan dishes are lovingly prepared from local ingredients on the premises. The Craven Arms began its life as a 16th-century farmhouse and many of the original features remain. Open Fires create a cozy atmosphere and on warmer days you can enjoy the spectacular views  of scenery from the garden. The pub has its own herb garden and the thatched Cruck Barn on the premises hosts events.",
+      "address": "The Craven Arms, Appletreewick, Skipton BD23 6DA, United Kingdom",
+      "website": "craven-cruckbarn.co.uk",
+      "image_path": "images/craven.jpg",
+      "region_id": 5
+    }
+  }, 
+  {
+    "model": "blightyapp.pub",
+    "pk": 42,
+    "fields": {
+      "name": "The Cook and Barker",
+      "description": "| MORPETH | NORTHUMBERLAND | A postcard of rural England, Newton-on-the-Moor’s Cook & Barker Inn welcomes patrons with a charming stone façade, overfowing with fowers and country appeal. It’s a rustic style that continues inside, with a distinctly luxurious touch. Think button-back seats, timber foorboards and exposed brick walls. In the restaurant, the menu is inspired by the pub's location close to both the coast and the Cheviot Hills, featuring seafood, grills, and traditional pub classics, each creatively plated. Upstairs, the 14 en-suite bedrooms and two suites invite visitors to make a weekend of it.",
+      "address": "The Cook and Barker, Newton-on-the-Moor, Morpeth NE65 9JJ, United Kingdom",
+      "website": "cookandbarkerinn.co.uk",
+      "image_path": "images/cook.jpg",
+      "region_id": 5
     }
   }, 
   {

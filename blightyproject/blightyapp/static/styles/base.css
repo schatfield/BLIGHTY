@@ -42,12 +42,13 @@ a:hover {
 }  
 
 .nav-logo{
-  width: 70%;
+  width: 69%;
   font-family: 'Playfair Display SC', serif;
   font-size: 34px;
   font-weight: 400;
   letter-spacing: -2.5px;
   z-index: 10;
+  margin-left:35px;
   background-color: #fbfbfb;
   
 
