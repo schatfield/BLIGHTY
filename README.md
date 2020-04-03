@@ -51,6 +51,6 @@ Run your development server
     `python manage.py runserver`
 
 # Entity Relationship Diagram
-[ERD](https://i.imgur.com/xBuLENr.png)
+![ERD](https://i.imgur.com/xBuLENr.png)
 ![alt text](https://i.imgur.com/1VUE4X2.png "Terrible Techno Screenshot")
 
