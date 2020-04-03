@@ -52,6 +52,5 @@ Run your development server
 
 # Entity Relationship Diagram
 <img src="https://imgur.com/xBuLENr">
-![Blighty ERD]
-(https://imgur.com/xBuLENr)
+![Blighty ERD](https://imgur.com/xBuLENr)
 
