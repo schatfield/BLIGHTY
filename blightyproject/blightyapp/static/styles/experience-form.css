@@ -1,31 +1,36 @@
+
+
 .form-title {
     font-family: 'Playfair Display SC', serif;
-    padding-top:50px;
     font-size: 50px;
-    margin-left: 0px;
-    padding-bottom: 15px;
+    margin-bottom: 0;
 }
 
 .form{
+    padding-top: 35px;
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    width: 600px;
-    height: 500px;    
-  
+    width: 750px;
+    height: 550px;    
+    background-image: url('../images/experience.png') ;
+}
+
+.template-container{
+    padding-bottom: 5px;
 }
 
 input[type="text"], input[type="password"]{
     outline: none;
     border: none;
-    width: 200px;
-    height: 48px;
-    margin-right: 50px;
+    width: 355px;
+    height: 35px;
+    margin-left: 30px;
     font-family: 'Roboto', serif;    
     border-bottom: 1px solid black;  
     background-color: #fbfbfb;
-    padding-bottom: 30px;
+
 }
 
 .add{
@@ -33,8 +38,9 @@ input[type="text"], input[type="password"]{
     font-size: 18px;
     width: 200px;
     height: 35px;
+    margin-left:30px;
 }
 
 textarea {
-    margin: 30px 0;
+    margin: 30px;
 }

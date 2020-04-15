@@ -1,29 +1,37 @@
 .page-title {
     font-family: 'Playfair Display SC', serif;
-    padding-top:50px;
+    /* padding-top:50px; */
     font-size: 50px;
     margin-left: 0px;
     padding-bottom: 15px;
 }
 
-.experience-card {
+.experience-flex {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 20px;
     
+}
+
+.experience-card {
+    display:flex;
+    align-items: center;
 }
 
 .content-container {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);    
     background-color:#e2e8e0;
-    width: 450px; 
-    height: 250px;   
-    margin-left:-35px ;
-    margin-top: 15px;
+    width: 340px; 
+    height: 270px;       
+    margin-left:-10px;
+    align-self: center;
     position: relative;    
     z-index:1;
 }
 
 .main-image{
-   width: 400px; 
+   width: 380px; 
    height: 280px;
 }
 

@@ -1,0 +1,32 @@
+
+.hero{
+    text-align: center;
+}
+   
+
+.image { 
+    padding-top: 50px;    
+    width: 1500px;
+    height:700px;
+}
+
+.welcome-message-1 {
+    font-family: 'Libre Caslon Display', serif;
+    font-size: 16px;
+    padding-top:25px;
+    padding-bottom: 30px;
+    margin-left: 400px; 
+    margin-right:300px;
+    text-align: justify;
+   
+}
+
+.welcome-message-2 {
+    font-family: 'Libre Caslon Display', serif;
+    font-size: 16px;
+    padding-bottom: 40px;
+    margin-left: 400px; 
+    margin-right:300px;
+    text-align: justify;
+
+}

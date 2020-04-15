@@ -14,7 +14,7 @@
 
 
 <section class="template-container">
-    <heading class="form-title"> My Experience at {{ patron_pub.pub.name }}</heading>
+    <p class="form-title"> My Experience at {{ patron_pub.pub.name }}</p>
 
     <div class="form">
       <form action="{% url 'blightyapp:experience_list' %}?next={{next_url}}" method="post">
@@ -24,22 +24,28 @@
             <label for="beers_tried">
               <input id="beers" type="text" placeholder="beers enjoyed" name="beers" value="{{patron_pub.beers_tried}}">
             </label>
-            </br>
+            </p>
 
             <label for="food_ate"> </label>
             <input id="food" type="text" placeholder="food tried" name="food" value="{{patron_pub.food_ate}}">
 
-            </br>
+            </p>
     
             <label for="experience"></label>
-            <textarea rows="5" cols="60" id="Experience" style="resize: none;" type="text" placeholder="describe your experience" name="experience" value="{{patron_pub.experience}}"></textarea>
-            </br>
+            <textarea rows="20" cols="60" id="Experience" style="resize: none;" type="text" placeholder="describe your experience" name="experience">{{patron_pub.experience}}</textarea>
+            </p>
     
           {% comment %} Add hidden field with patron pub id to send it to the view?{% endcomment %}
             <input type="hidden"  id="region_id" name="region_id" value="{{ patron_pub.region_id }}">
             <input type="hidden"  id="patron_pub_id" name="patron_pub_id" value="{{ patron_pub.id }}">
             <input type="hidden"  id="context"  name="context" value="region_detail">
-            <input class="add" type="submit" value="ADD MY EXPERIENCE" />
+            
+            
+            {% if patron_pub.has_experience %}
+                <input class="add" type="submit" value="EDIT EXPERIENCE" />
+            {% else %}
+                <input class="add" type="submit" value="ADD MY EXPERIENCE" />
+            {% endif %}
       
           </form>
         </div>

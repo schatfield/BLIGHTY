@@ -15,13 +15,14 @@ p {
     display: flex;
     transition: 0.3s;
     border-radius: 5px; /* 5px rounded corners */
-    width: 512px;  
+    width: 500px;  
     flex-wrap: wrap;
     justify-content: space-evenly;      
 }
 
 .card-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
@@ -29,48 +30,66 @@ p {
     padding-top: 75px;
 }  
 
-.region-name{
+.region-name {
     font-family: 'Playfair Display SC', serif;
     font-size: 50px;
     margin-left: 0px;
     padding-bottom: 15px;
 }
 
-.main-image{
-    height: 400px;
-    width: 515px;     
+.region-description{
     
+    font-family: 'Libre Caslon Display', serif;
+    font-size: 16px;
+    padding-bottom: 40px;
+    margin-right: 300px;
+    text-align: justify;
 }
-.pub-div{    
+
+.main-image{
+    height: 380px;
+    width: 500px;        
+}
+
+.image-div {
+    height: 400px;
+    width: 515px;
+}
+
+.pub-div {    
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    display: flex;
-    background-color: #e9dfdf;
+    /* display: flex; */
+    background-color: #ebeae8;
     width: 98%;
-    margin-left:7px ;
-    position: relative;
-    top: -30px;        
+    height: 430px;
+    /* margin-left:2px ; */
+    position: relative;    
+    top: -35px;        
     z-index:1;
+   
 }
 
-.pub-title{
+.pub-desc-details {
     display: flex;
-
+    justify-content: space-evenly;
 }
+
+button:focus { outline: none; }
 
 .plus{
    /* margin-top:2px; */
-   background-color: #e9dfdf;
+   background-color: #ebeae8;
    height: 20px;
    border:none;
 }
 
 .check{
-    background-color: #e9dfdf ;
+    background-color: #ebeae8 ;
     border:none;    
 }
 
 .heart{
-    background-color: #e9dfdf ;
+    background-color:#ebeae8 ;
     border:none;
 }
 
@@ -84,17 +103,20 @@ p {
 
 .pub-desc{
     font-family: 'Roboto', sans-serif;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 200;
     text-align: justify;
     margin-left: 5px;
+    margin-top:10px;
+    width: 100%;
     /* margin-right:200px; */
 }
 
- .pub-details{
+
+.pub-details {
     font-family: 'Roboto', sans-serif;
     /* margin-left: 50px; */
-    margin-top: 100px;
+    margin-top: 10px;
     margin-left: 18px;
     text-align: justify;
     font-size: 15px;
@@ -107,12 +129,11 @@ p {
     justify-content: space-evenly;      
 }
 
-.pub-address{
+.pub-address {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    font-weight: 900;
-  
-   
+    font-weight: 900;   
+    margin-top: 25px;
 }
 
 .pub-web{
@@ -125,14 +146,11 @@ p {
 .address{
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
-   
+    text-align: left;
     
 }
 
-.web{
+.web {
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
-    
-   
-    
 }
