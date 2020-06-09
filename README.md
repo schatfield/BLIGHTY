@@ -12,7 +12,7 @@ BLIGHTY is curated directory of some of the best country pubs in England. With B
 
 # Instructions for running and installing BLIGHTY
 
-Clone this repo using the following command then cd into it
+Clone this repo using the following command then cd into it:
 
     `git clone git@github.com:schatfield/BLIGHTY.git`
 
@@ -26,16 +26,16 @@ Windows users: create your virtual environment in Command Line
     `python -m venv blightyenv`
     `source ./blightyenv/Scripts/activate`
 
-Install app dependencies
+Install app dependencies:
 
     `pip install -r requirements.txt`
 
-Build your database from the existing models
+Build your database from the existing models:
 
     `python manage.py makemigrations blightyapp`
     `python manage.py migrate`
 
-Create a superuser for your local version of the app
+Create a superuser for your local version of the app:
 
     `python manage.py createsuperuser`
 
@@ -43,7 +43,7 @@ Populate your database with initial data from fixture file:
 
     `python manage.py loaddata blighty`
     
-Run your development server
+To run your development server, cd into the "blightyProject" folder (the folder that contains the "manage.py" file) and then run the command below:
 
     `python manage.py runserver`
 
