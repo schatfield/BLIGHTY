@@ -49,7 +49,7 @@
     "pk": 6,
     "fields": {
       "name": "Northwest",
-      "description":"Counties include: of Cheshire, Cumbria, Greater Manchester, Lancashire and Merseyside.",
+      "description":"Home to some of the country's most beautiful landscapes, North West England is a diverse region: The south is largely urban and home to the dynamic cities of Liverpool and Manchester, while to the north is some of England's best countryside in the Lake District and Lancashire Pennines. It can be rather wet having earned status as one of the rainiest areas of the country, but take a cue from the English themselves and adopt a philosophy to live by: There's no such thing as bad weather, only unsuitable clothing...Counties include: of Cheshire, Cumbria, Greater Manchester, Lancashire and Merseyside.",
       "image_path":"images/northwest.png"
     }
   },
@@ -506,7 +506,7 @@
       "name": "The Star Inn",
       "description": "| YORK | YORKSHIRE | Some six hundred years have made The Star Inn the charming pub that it is today. And what a pub it is. Perched on the banks of the river Ouse in the medieval city of York, The Star Inn isn't afraid to make a splash. Outside boasts a splendid thatch roof while inside a dramatic and eclectic atmosphere awaits. Comfort isn't sacrificed at the expense of an impression though, it is in equal parts characterful as it is in inviting warmth. Expect food that is propelled by the seasons and that places provenance of ingredients at its heart.Clearly they are doing something right in the pub grub department seeing as the pub's offerings have earned it a prestigious Michelin star. A title they have proudly held for four years in a row now.",
       "address": "The Star Inn, Main St, Harome, Harome, near Helmsley YO62 5JE, United Kingdom",
-      "website": "http://www.thestaratharome.co.uk/",
+      "website": "https://www.drunkenduckinn.co.uk//",
       "image_path": "images/star.jpeg",
       "region_id": 5
     }
@@ -546,7 +546,55 @@
       "image_path": "images/cook.jpg",
       "region_id": 5
     }
+  },
+  {
+    "model": "blightyapp.pub",
+    "pk": 43,
+    "fields": {
+      "name": "The Drunken Duck",
+      "description": "| AMBLESIDE | CUMBIRA | If one needed yet another reason to visit England's ridiculously pretty Lake District, let it be The Drunken Duck. Located in the charming village of Ambleside, this pub offers both mesmerising views towards Windermere and a cosy interior of rustic country chic from which to view the view. With soft greens contrasting against chocolate leather armchairs, stripped oak floors and vintage artwork, it's a delight for the eyes inside and out. Built in the 18th century, this is one of the Lake District’s best known gastro pubs for the foodies.With their own micro-brewery, the local ales and beers have a major appeal with locals and visitors. For around £100 per night you can stay in the charming Drunken Duck Inn- The rooms and gardens look like a spread from ‘Country Living’...",
+      "address": "The Drunken Duck, Barngates, Ambleside LA22 0NG, United Kingdom",
+      "website": "https://drunkenduckinn.co.uk/",
+      "image_path": "images/drunk.jpeg",
+      "region_id": 6
+    }
   }, 
+  {
+    "model": "blightyapp.pub",
+    "pk": 44,
+    "fields": {
+      "name": "The Punch Bowl",
+      "description": "| CROSTHWAITE | CUMBIRA | The Friday night crowd here looks like this: the odd City boy getting away from it all, gamekeepers from the local hunt, and walkers whacked out after a day of fresh air in the nearby Windermere fells. All united in hunkering down by the fireplace in the bar or sitting at wooden tables in the more formal dining room. In either space you can wolf down feather- light, twice-baked Lancashire soufflé with tomato chutney or delicate loin of rabbit, knocked up by rising star young chef Scott Fairweather. Upstairs, there are nine totally different rooms: Think elm four-poster beds, grand, dramatic hand-blocked wallpaper, eaves with wooden beams, and free-standing baths side by side. There are Roberts radios on the dressing tables, woollen throws on the beds and pops of colour from sage green to raspberry red. Wake up in the morning, pull back the thick curtains and look out over a patchwork of fields.",
+      "address": "​​The Punch Bowl. Crosthwaite, Cumbria, LA8 8HR",
+      "website": "https://www.the-punchbowl.co.uk/",
+      "image_path": "images/punch.jpeg",
+      "region_id": 6
+    }
+  },
+  {
+    "model": "blightyapp.pub",
+    "pk": 45,
+    "fields": {
+      "name": "The Pheasant Inn",
+      "description": "| TATTENHALL| CHESHIRE | By 1650, there were known to be three ale houses in Burwardsley, one of which was almost certainly The Pheasant and it has been a licensed ale house ever since. The bar features four real ales recognised for their well kept quality by CAMRA (Campaign for Real Ales) and the freshly cooked wholesome food is on the menu has been rewarded for its quality with an AA Rossette, the Michelin Good Pub and Egon RonayGuides. During winter months you can enjoy cosy meals around open fires, whilst in the Summer you can dine ‘al fresco’ and admire the panoramic views of the Cheshire plains.",
+      "address": "​​Higher Burwardsley, Tattenhall, Cheshire, CH3 9PF",
+      "website": "http://thepheasantinn.co.uk/",
+      "image_path": "images/pheas.jpeg",
+      "region_id": 6
+    }
+  },
+  {
+    "model": "blightyapp.pub",
+    "pk": 46,
+    "fields": {
+      "name": "Kirkstile Inn",
+      "description": "| | CUMBIRA | A favourite Lakeland pub of many a hill-walker, the unfussy Kirkstile’s higgledy-piggledy lounges with fires make it the ideal place to hole up after charging over the fells, for pints of Loweswater Gold from its own brewery and fantastic, filling pub fare (steak and ale pie, lamb shank, vegan curry). It’s only a mile to both Crummock Water and Loweswater, and Buttermere and Ennerdale are also near for crunchy wintery walks along the water’s edge...",
+      "address": "​​ Loweswater, The Lake District, Cumbria CA13 0RU",
+      "website": " www.kirkstile.com",
+      "image_path": "images/kirk.jpeg",
+      "region_id": 6
+    }
+  },
   {
     "model": "blightyapp.patronpub",
     "pk": 1,
