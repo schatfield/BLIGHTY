@@ -1,6 +1,6 @@
 # BLIGHTY
 
-<i><b>Blight·y</i><b> <br>
+<i><b>Blight·y</i></b> <br>
 /ˈblīdē/ <br>
 noun BRITISH <br>
 <i>An informal and typically affectionate term for Britain or England, chiefly as used by soldiers of World War I and World War II.</i>
@@ -10,9 +10,9 @@ BLIGHTY is curated directory of some of the best country pubs in England. With B
 
 ![screenshot](https://imgur.com/By5SIyT.png)
 
-# Why was BLIGHTY built?
+### Why was BLIGHTY built?
 
-# Want to use BLIGHTY? Follow the instructions below: 
+### Want to use BLIGHTY? Follow the instructions below: 
 
 Clone this repo using the following command then cd into it:
 
