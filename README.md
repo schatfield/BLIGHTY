@@ -10,9 +10,9 @@ BLIGHTY is curated directory of some of the best country pubs in England. With B
 
 ![screenshot](https://imgur.com/By5SIyT.png)
 
-### Why was BLIGHTY built?
+### Why was <i>BLIGHTY</i> built?
 
-### Want to use BLIGHTY? Follow the instructions below: 
+### Want to use <i>BLIGHTY</i>? Follow the instructions below to run & install the app: 
 
 Clone this repo using the following command then cd into it:
 
@@ -51,3 +51,5 @@ To run your development server, cd into the "blightyProject" folder (the folder 
 
 # Entity Relationship Diagram
 ![ERD](https://i.imgur.com/xBuLENr.png)
+
+# UI Wireframes
