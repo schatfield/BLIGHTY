@@ -59,6 +59,11 @@ To run your development server, cd into the "blightyProject" folder (the folder 
 ![WIREFRAMES](https://i.imgur.com/VelLEnz.png)
 ![WIREFRAMES](https://i.imgur.com/T8yVpiB.png)
 ![WIREFRAMES](https://i.imgur.com/ie8LdKg.png)
+![WIREFRAMES](https://i.imgur.com/sYzSrjI.png)
+![WIREFRAMES](https://i.imgur.com/6aKnaqv.png)
+![WIREFRAMES](https://i.imgur.com/sBEtbsv.png)
+
+
 
 
 
