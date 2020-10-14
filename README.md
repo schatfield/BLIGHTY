@@ -53,3 +53,7 @@ To run your development server, cd into the "blightyProject" folder (the folder 
 ![ERD](https://i.imgur.com/xBuLENr.png)
 
 # UI Wireframes
+![WIREFRAMES](https://i.imgur.com/Af9I35r.png)
+![WIREFRAMES](https://i.imgur.com/jq60uhB.png)
+
+
